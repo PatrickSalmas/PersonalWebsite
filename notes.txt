@@ -1,0 +1,41 @@
+Notes about site:
+- at a width of 632 pixels, the nav bar runs into issue
+-- May want to consider a responsive layout/mobile version
+
+- There is a small "deadzone" in the nav dropdowns that causes the dropdown to begin 
+  hiding briefly
+-- Need to eliminate zone so the dropdown is fluid
+-- Issue doesn't seem to always occur. May need to do lot's of testing width various widths
+
+- May want to increase the padding of the dropdowns so that if the user has some grace 
+  when moving their mouse around the dropdown
+-- If the user slitely moves their mouse off of the dropdown, you don't want the dropdown
+   to begin hiding immediately 
+   
+- Add smooth scrolling transitions on projects and experience views instead of the default
+  immediate jumps
+  
+- Add transitions to the <hr> in projects view (if we decide to keep the hr's)
+
+- A no JS "version" of the site
+-- Would have to replace the instances of 'style="display:none;"', and instead have those added
+   at the begining via JS, if the user has JS enabled
+-- .......
+
+- Change the pointer events for About and resume (finger pointer thing)
+
+- Fix the projects dropdown
+-- When a project link is clicked (from the dropdown or from the main button),
+   the dropdown shifts right before collapsing 
+   
+- TODO:
+-- need to be able to go from experience view back to home via "home" link
+
+
+  
+- REFACTORS:
+-- use transition css variables in all instances possible
+-- maybe find a way to create a function for all the instances of "setTimeout" in the js code
+-- make functions whereever possible, helps with readability 
+-- combine CSS rules where possible (be careful here, may want to have Github source control setup before)
+-- rename functions and variables 

@@ -1,0 +1,147 @@
+/* Let's add css variables up here (for background-color of page for instance) */
+:root {
+	--bg-color: white;
+	--nav-color: black;
+	--font-color: #7f7f7f;
+	--nav-height: 85px;
+	--color-transition: color 1.5s;
+	--opacity-transition: opacity 1.5s;
+	--height-transition: height 1.5s;
+	--dropdown-height: 250px;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+div#navBar {
+	width: 100%;
+	height: var(--nav-height);
+	margin-left: 0;
+	margin-right: 0;
+	background-color: var(--nav-color);
+	position: fixed;
+	z-index: 2;
+	
+}
+
+#navBar a.navOpt, #navBar button.navOpt {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: var(--font-color);
+}
+
+#myName {
+	font-weight: 400;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: var(--font-color);
+}
+
+.nameDiv {
+	display: inline-block;
+	height: 50px;
+	padding: 20px 15px;
+	text-align: center;
+
+}
+
+a#mainLink {
+	display: inline;
+	float: none;
+	padding: 20px 10px;
+	font-size: 28px;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 45px;
+}
+
+#homeLink {
+	transition: var(--color-transition);
+}
+
+.navLinks > a.navOpt, .navLinks > a.projOpt, .navLinks > a.expOpt{
+	display: inline;
+	margin-left: 20px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.navFade {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: var(--nav-color);
+	display: inline;
+	margin-left: 20px;
+	/* font-size: 0; */
+	transition: color 1.5s;
+}
+
+.navLinks button {
+	border: none;
+	font-size: 18px;
+	margin-left: 20px;
+	padding-top: 29px;
+	padding-bottom: 33px;
+	background-color: var(--nav-color);
+	cursor: pointer;
+}
+
+.navLinks {
+	vertical-align: middle;
+	display: inline;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+}
+
+
+.fas, .fa-bars {
+	font-size: 30px;
+	color: #7f7f7f;
+}
+
+.dropdown {
+	display: inline;
+	text-align: center;
+}
+
+.dropdown a {
+	line-height: 0px;
+	
+}
+
+.dropdown-content {
+	overflow-y: hidden;
+	z-index: -1;
+	position: absolute;
+}
+
+.dropdown-projects-content {
+	width: 90px;
+	height: 0px;
+	background: var(--nav-color);
+	transition: height 1.5s;
+	margin-left: 283px;
+	z-index: 1;
+	
+}
+
+.dropdown-projects:hover .dropdown-projects-content {
+	height: 250px;
+	transition: height 1.5s;
+}
+
+.dropdown-experience-content {
+	width: 90px;
+	height: 0px;
+	background: var(--nav-color);
+	transition: height 1.5s;
+	margin-left: 170px;
+	z-index: 1;
+}
+
+.dropdown-experience:hover .dropdown-experience-content {
+	height: 250px;
+	transition: height 1.5s;
+}
+
+
+

@@ -1,0 +1,33 @@
+.projectImg, .expImg {
+	float: left;
+}
+
+.projectDes, .expDes {
+	float: right;
+}
+
+.projContent, .expContent {
+	padding-top: 85px;   /* Be careful with this attribute (used for href targeting visual...) */
+	margin-top: -85px;
+}
+
+iframe {
+	/* display: block; */
+}
+
+img {
+	height: 440px;
+	width: 560px;
+}
+
+#resume {
+	text-align: center;
+	width: 100%;
+}
+
+#content {
+	/* margin-top: var(--nav-height); */
+	position: absolute;
+	top: var(--nav-height);
+	width: 100%;
+}

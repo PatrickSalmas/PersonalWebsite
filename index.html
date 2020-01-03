@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+	<title>Patrick Salmas</title>
+	<link rel="stylesheet" type="text/css" href="navBar.css">
+	<link rel="stylesheet" type="text/css" href="mainContent.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700&display=swap" rel="stylesheet">
+	<!-- <script src="https://kit.fontawesome.com/3b55ff36c9.js" crossorigin="anonymous"></script> -->
+	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+	<script type="text/javascript" src="navBar.js"></script>
+	
+
+</head>
+<body>
+	<div id="navBar">
+		<div class="nameDiv">
+			<a id="mainLink" href="index.html">
+				<span id="myName">Patrick Salmas</span>
+			</a>
+		</div>	
+		<div class="navLinks">
+			<a id="homeLink" onclick="loadHomeContent()" class="navOpt" href="#" style="display:none;">Home</a>
+			<a class="navOpt defaultNav">About</a>
+			<a onclick="loadResume()" class="navOpt defaultNav">Resume</a>
+			<!-- <a>Experience</a> -->
+			<!-- <a>Projects</a> -->
+			<div class="dropdown dropdown-experience">
+				<button class="navOpt defaultNav" onclick="displayDropdownContent(99,'exp')">Experience</button>
+				<div class="dropdown-content dropdown-experience-content">
+					<a href="#" onclick="displayDropdownContent(0,'exp')">Experience 1</a><br>
+					<a href="#" onclick="displayDropdownContent(1,'exp')">Experience 2</a><br>
+					<a href="#" onclick="displayDropdownContent(2,'exp')">Experience 3</a><br>
+				</div>
+			</div>
+			<div class="dropdown dropdown-projects">
+				<button class="droplink-projects navOpt defaultNav" onclick="displayDropdownContent(99,'proj')">Projects</button>
+				<div class="dropdown-content dropdown-projects-content">
+					<a href="#" id="pNav0" data-pos="1" onclick="displayDropdownContent(0,'proj')">Link 1</a><br>
+					<a href="#" id="pNav1" data-pos="2" onclick="displayDropdownContent(1,'proj')">Link 2</a><br>
+					<a href="#" id="pNav2" data-pos="3" onclick="displayDropdownContent(2,'proj')">Link 3</a><br>
+				</div>
+			</div>
+			
+			<a class="expOpt" id="expOpt0" href="#exp0" style="display: none; color: rgb(0,0,0);">Experience 0</a>
+			<a class="expOpt" id="expOpt1" href="#exp1" style="display: none; color: rgb(0,0,0);">Experience 1</a>
+			<a class="expOpt" id="expOpt2" href="#exp2" style="display: none; color: rgb(0,0,0);">Experience 2</a>
+			
+			<a class="projOpt" id="pOpt0" data-projpos="0" href="#proj0" style="display: none; color: rgb(0,0,0);">Project 0</a>
+			<a class="projOpt" id="pOpt1" data-projpos="1" href="#proj1" style="display: none; color: rgb(0,0,0);">Project 1</a>
+			<a class="projOpt" id="pOpt2" data-projpos="2" href="#proj2" style="display: none; color: rgb(0,0,0);">Project 2</a>
+		</div>
+	</div>
+		<div id="content">
+			<div id="resume" style="display: none;">
+				<iframe src="media/dummy_resume.pdf" width="800px" height="800px"></iframe>
+			</div>
+			
+			<div id="exp0" name="exp0" class="expContent" style="display:none;">
+				<p class="expDes"><img class="expImg" src="media/terminator.jpg" alt="dummy">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+				</p>
+				<hr>
+			</div>
+			<div id="exp1" name="exp1" class="expContent" style="display:none;">
+				<p class="expDes"><img class="expImg" src="media/terminator2.jpg" alt="dummy">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+				</p>
+				<hr>
+			</div>
+			<div id="exp2" name="exp2" class="expContent" style="display:none;">
+				<p class="expDes"><img class="expImg" src="media/terminator3.jpg" alt="dummy">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+				</p>
+				<hr>
+			</div>
+			
+			<div id="proj0" name="proj0" class="projContent" style="display:none;">
+				<p class="projectDes"><img class="projectImg" src="media/reservior_dogs.jpg" alt="dummy">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+				</p>
+				<hr>
+			</div>
+			<div id="proj1" name="proj1" class="projContent" style="display: none;">
+				<p class="projectDes"><img class="projectImg" src="media/pulpfiction.jpg" alt="dummy">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+				</p>
+				<hr>
+			</div>
+			<div id="proj2" name="proj2" class="projContent" style="display: none;">
+				<p class="projectDes"><img class="projectImg" src="media/jackie_brown.jpg" alt="dummy">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+				</p>
+				<hr>
+			</div>
+		</div>
+	<!-- <div> -->
+		<!-- <i class="fas fa-bars"></i> -->
+	<!-- </div> -->
+</body>
