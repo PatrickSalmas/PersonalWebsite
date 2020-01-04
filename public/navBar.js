@@ -15,6 +15,11 @@ var opacityTransition = "opacity 1.5s";
 var resumeOnScreen;
 var projectsOnScreen;
 var experienceOnScreen;
+var homepageOnScreen;
+
+function initLoad() {
+	homepageOnScreen = true;
+}
 
 function displayDropdownContent(pos,contentType) {
 	let waitTime;
@@ -27,11 +32,14 @@ function displayDropdownContent(pos,contentType) {
 							  //transition speed so that whatever is fading off the screen
 							  //has enough time. May want to eventually decrease the transition speed
 		loadHomeLink(waitTime);
+	} else if(homepageOnScreen) {
+		fadeHomeImg();
+		waitTime = fadeTime;
+		loadHomeLink(waitTime);
 	} else {
 		waitTime = loadTime;
 		loadHomeLink(waitTime);
 	}
-	
 	
 	if(pos != 99 && pos != 0) {
 		//do positioning stuff here
@@ -83,16 +91,6 @@ function displayDropdownContent(pos,contentType) {
 }
 
 function orderContent(pos,contentType) {
-	// let navLinks = document.getElementsByClassName('navLinks');
-	// let projOptions = document.getElementsByClassName('projOpt');
-	// navLinks[0].insertBefore(projOptions[pos],projOptions[0]);
-	
-	// //need to do similar logic with project content as you did with nav options
-	// let content = document.getElementById('content');
-	// let projContent = document.getElementsByClassName('projContent');
-	// content.insertBefore(projContent[pos],projContent[0]);
-	
-	
 	let navLinks = document.getElementsByClassName('navLinks');
 	let contentDiv = document.getElementById('content');
 	let options;
@@ -163,6 +161,20 @@ function fadeNavOptions() {
 				navOptions[i].style.display = "none";
 			}
 		}, loadTime);
+}
+
+function fadeHomeImg() {
+	let homeImg = document.getElementById('homeImg');
+	let homeImgDiv = document.getElementById('homeImgDiv');
+	
+	setTimeout(function() {
+		homeImg.style.opacity = 0.0;
+	}, 0);
+	
+	setTimeout(function() {
+		homeImgDiv.style.display = "none";
+	}, fadeTime);
+	homepageOnScreen = false;
 }
 
 function fadeDropdowns() {
@@ -282,21 +294,45 @@ function loadHomeContent() {
 	//Have no default content to load, but here is where we would want to handle that logic
 	//Also want to handle the logic for loading the default navOptions
 	loadDefaultNav(waitTime);
+	loadHomeImg();
 	// restoreProjectOrder();
 }
 
+function loadHomeImg() {
+	let homeImg = document.getElementById('homeImg');
+	let homeImgDiv = document.getElementById('homeImgDiv');
+	
+	setTimeout(function() {
+		homeImgDiv.style.removeProperty('display');
+		// homeImg.style.opacity = 0.0;
+	}, loadTime);
+	
+	setTimeout(function() {
+		homeImg.style.opacity = 100;
+	}, loadTime+20);
+	homepageOnScreen = true;
+}
+
 function loadResume() {
+	let waitTime;
+	if(homepageOnScreen) {
+		fadeHomeImg();
+		waitTime = fadeTime;
+	} else {
+		waitTime = loadTime;
+	}
+	
 	let resume = document.getElementById('resume');
 	
 	setTimeout(function() {
 		resume.style.removeProperty('display');
 		resume.style.opacity = 0.0;
 		resume.style.transition = opacityTransition;
-	}, loadTime);
+	}, waitTime);
 	
 	setTimeout(function() {
 		resume.style.opacity = 100;
-	}, loadTime+20);
+	}, waitTime+20);
 	
 	resumeOnScreen = true;
 }
