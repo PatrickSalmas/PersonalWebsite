@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <head>
-	<meta charset="utf-8">
-	<title>NavBar2</title>
-	<script type="text/javascript" src="navBar.js"></script>
-	<link rel="stylesheet" href="index.css">
+	<title>Patrick Salmas</title>
+	<link rel="stylesheet" type="text/css" href="navBar.css">
+	<link rel="stylesheet" type="text/css" href="mainContent.css">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700&display=swap" rel="stylesheet">
+	<!-- <script src="https://kit.fontawesome.com/3b55ff36c9.js" crossorigin="anonymous"></script> -->
+	<!-- <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script> -->
+	<script type="text/javascript" src="navBar.js"></script>
+	
+
 </head>
 <body onload="initLoad()">
-	<header>
-		<a href="index.html" id="myName">Patrick Salmas</a>
-		<!-- <nav style="margin-left: auto; margin-right: auto;"> -->
-			<!-- <ul class="nav__links"> -->
-				<!-- <li><a href="#">Project 0</a></li> -->
-				<!-- <li><a href="#">Project 1</a></li> -->
-				<!-- <li><a href="#">Project 2</a></li> -->
-			<!-- </ul> -->
-		<!-- </nav> -->
-		<nav>
-			<ul class="nav__links">
-				<li><a href="#">About</a></li>
-				<li><a href="#" onclick="loadResume()">Resume</a></li>
-				<li><a href="#" onclick="displayDropdownContent(99,'exp')">Experience</a></li>
-				<li><a href="#" onclick="displayDropdownContent(99,'proj')">Projects</a></li>
-			</ul>
-		</nav>
-		<a class="cta" href="#"><button>Contact</button></a>
-	</header>
-	<div id="content">
+	<div id="navBar">
+		<div class="nameDiv">
+			<a id="mainLink" href="index.html">
+				<span id="myName">Patrick Salmas</span>
+			</a>
+		</div>	
+		<div class="navLinks">
+			<a id="homeLink" onclick="loadHomeContent()" class="navOpt" href="#" style="display:none;">Home</a>
+			<a class="navOpt defaultNav">About</a>
+			<a onclick="loadResume()" class="navOpt defaultNav">Resume</a>
+			<!-- <a>Experience</a> -->
+			<!-- <a>Projects</a> -->
+			<div class="dropdown dropdown-experience">
+				<button class="navOpt defaultNav" onclick="displayDropdownContent(99,'exp')">Experience</button>
+				<div class="dropdown-content dropdown-experience-content">
+					<a href="#" onclick="displayDropdownContent(0,'exp')">Experience 1</a><br>
+					<a href="#" onclick="displayDropdownContent(1,'exp')">Experience 2</a><br>
+					<a href="#" onclick="displayDropdownContent(2,'exp')">Experience 3</a><br>
+				</div>
+			</div>
+			<div class="dropdown dropdown-projects">
+				<button class="droplink-projects navOpt defaultNav" onclick="displayDropdownContent(99,'proj')">Projects</button>
+				<div class="dropdown-content dropdown-projects-content">
+					<a href="#" id="pNav0" data-pos="1" onclick="displayDropdownContent(0,'proj')">Link 1</a><br>
+					<a href="#" id="pNav1" data-pos="2" onclick="displayDropdownContent(1,'proj')">Link 2</a><br>
+					<a href="#" id="pNav2" data-pos="3" onclick="displayDropdownContent(2,'proj')">Link 3</a><br>
+				</div>
+			</div>
+			
+			<a class="expOpt" id="expOpt0" href="#exp0" style="display: none; color: rgb(0,0,0);">Experience 0</a>
+			<a class="expOpt" id="expOpt1" href="#exp1" style="display: none; color: rgb(0,0,0);">Experience 1</a>
+			<a class="expOpt" id="expOpt2" href="#exp2" style="display: none; color: rgb(0,0,0);">Experience 2</a>
+			
+			<a class="projOpt" id="pOpt0" data-projpos="0" href="#proj0" style="display: none; color: rgb(0,0,0);">Project 0</a>
+			<a class="projOpt" id="pOpt1" data-projpos="1" href="#proj1" style="display: none; color: rgb(0,0,0);">Project 1</a>
+			<a class="projOpt" id="pOpt2" data-projpos="2" href="#proj2" style="display: none; color: rgb(0,0,0);">Project 2</a>
+		</div>
+	</div>
+		<div id="content">
 			<div id="homeImgDiv">
 				<img id="homeImg" src="media/los_angeles_text1_electric.png">
 			</div>
@@ -72,6 +95,8 @@
 				</p>
 				<hr>
 			</div>
-	</div>
+		</div>
+	<!-- <div> -->
+		<!-- <i class="fas fa-bars"></i> -->
+	<!-- </div> -->
 </body>
-</html>
