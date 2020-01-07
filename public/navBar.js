@@ -71,17 +71,17 @@ function clearScreen() {
 		fadeHomeImg();
 		waitTime = fadeTime;
 	} else if(resumeOnScreen) {
-		document.getElementById('resumeNav').style.color = "#edf0f1";
+		document.getElementById('resumeNav').style.removeProperty('color');
 		fadeResume();
 		waitTime = fadeTime;  //We need to increase the loadTime to account for the
 							  //transition speed so that whatever is fading off the screen
 							  //has enough time. May want to eventually decrease the transition speed
 	} else if(projectsOnScreen) {
-		document.getElementById('projNav').style.color = "#edf0f1";
+		document.getElementById('projNav').style.removeProperty('color');
 		fadeProjects();
 		waitTime = fadeTime;
 	} else if(experienceOnScreen) {
-		document.getElementById('expNav').style.color = "#edf0f1";
+		document.getElementById('expNav').style.removeProperty('color');
 		fadeExperience();
 		waitTime = fadeTime;
 	} else {
