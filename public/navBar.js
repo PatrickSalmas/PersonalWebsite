@@ -3,13 +3,15 @@ var fadeTime = 1500;  //1500 == 1.5s (the amount of time we need to wait for thi
 					 //this time is based on the transition speeds being used
 
 var backgroundColor = "white";
-var navColor = "black";
+var navColor = "#24252A";
 var textColor = "#7f7f7f";
+var textHoverColor = "#0088a9";
 
 var dropdownHeight = "250px";
 
 var colorTransition = "color 1.5s";
 var opacityTransition = "opacity 1.5s";
+var allTransition = "all 1.5s ease 0s";
 
 //Booleans to determine what is currently on screen
 var resumeOnScreen;
@@ -21,30 +23,21 @@ function initLoad() {
 	homepageOnScreen = true;
 }
 
-function displayDropdownContent(pos,contentType) {
+function displayContent(pos,contentType) {
 	let waitTime;
 	
-	// if(resumeOnScreen) {
-		// fadeResume();
-		// waitTime = fadeTime;  //We need to increase the loadTime to account for the
-							  // //transition speed so that whatever is fading off the screen
-							  // //has enough time. May want to eventually decrease the transition speed
-	// } else if(homepageOnScreen) {
-		// fadeHomeImg();
-		// waitTime = fadeTime;
-	// } else {
-		// waitTime = loadTime;
-	// }
 	waitTime = clearScreen();
 	
 	let content;
 	let imgs;
 	
 	if(contentType == "proj") {
+		document.getElementById('projNav').style.color = textHoverColor;
 		content = document.getElementsByClassName('projContent');
 		imgs = document.getElementsByClassName('projectImg');
 		projectsOnScreen = true;
 	} else {
+		document.getElementById('expNav').style.color = textHoverColor;
 		content = document.getElementsByClassName('expContent');
 		imgs = document.getElementsByClassName('expImg');
 		experienceOnScreen = true;
@@ -78,14 +71,17 @@ function clearScreen() {
 		fadeHomeImg();
 		waitTime = fadeTime;
 	} else if(resumeOnScreen) {
+		document.getElementById('resumeNav').style.color = "#edf0f1";
 		fadeResume();
 		waitTime = fadeTime;  //We need to increase the loadTime to account for the
 							  //transition speed so that whatever is fading off the screen
 							  //has enough time. May want to eventually decrease the transition speed
 	} else if(projectsOnScreen) {
+		document.getElementById('projNav').style.color = "#edf0f1";
 		fadeProjects();
 		waitTime = fadeTime;
 	} else if(experienceOnScreen) {
+		document.getElementById('expNav').style.color = "#edf0f1";
 		fadeExperience();
 		waitTime = fadeTime;
 	} else {
@@ -175,7 +171,6 @@ function loadHomeContent() {
 	//Also want to handle the logic for loading the default navOptions
 	loadDefaultNav(waitTime);
 	loadHomeImg();
-	// restoreProjectOrder();
 }
 
 function loadHomeImg() {
@@ -196,19 +191,15 @@ function loadHomeImg() {
 function loadResume() {
 	let waitTime;
 	waitTime = clearScreen();
-	// if(homepageOnScreen) {
-		// fadeHomeImg();
-		// waitTime = fadeTime;
-	// } else {
-		// waitTime = loadTime;
-	// }
-	
+
+	document.getElementById('resumeNav').style.color = textHoverColor;
 	let resume = document.getElementById('resume');
 	
 	setTimeout(function() {
 		resume.style.removeProperty('display');
 		resume.style.opacity = 0.0;
-		resume.style.transition = opacityTransition;
+		resume.style.transition = allTransition;
+		// resumeNav.style.transition = allTransition;
 	}, waitTime);
 	
 	setTimeout(function() {

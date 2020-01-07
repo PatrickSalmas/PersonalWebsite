@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<title>NavBar2</title>
+	<title>Patrick Salmas</title>
 	<script type="text/javascript" src="navBar.js"></script>
 	<link rel="stylesheet" href="index.css">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700&display=swap" rel="stylesheet">
@@ -19,9 +19,9 @@
 		<nav>
 			<ul class="nav__links">
 				<li><a href="#">About</a></li>
-				<li><a href="#" onclick="loadResume()">Resume</a></li>
-				<li><a href="#" onclick="displayDropdownContent(99,'exp')">Experience</a></li>
-				<li><a href="#" onclick="displayDropdownContent(99,'proj')">Projects</a></li>
+				<li><a href="#" id="resumeNav" onclick="loadResume()">Resume</a></li>
+				<li><a href="#" id="expNav" onclick="displayContent(99,'exp')">Experience</a></li>
+				<li><a href="#" id="projNav" onclick="displayContent(99,'proj')">Projects</a></li>
 			</ul>
 		</nav>
 		<a class="cta" href="#"><button>Contact</button></a>
