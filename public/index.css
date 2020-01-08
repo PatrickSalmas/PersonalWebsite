@@ -181,3 +181,7 @@ footer h1 {
 	color: blue;
 	font-size: 1.1em;
 }
+
+#project-container, #experience-container {
+	transition: all 1.5s ease 0s
+}

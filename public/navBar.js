@@ -30,38 +30,23 @@ function displayContent(pos,contentType) {
 	
 	let content;
 	let imgs;
+	let contentDiv;
 	
 	if(contentType == "proj") {
-		document.getElementById('projNav').style.color = textHoverColor;
-		content = document.getElementsByClassName('projContent');
-		imgs = document.getElementsByClassName('projectImg');
+		contentDiv = document.getElementById('project-container');
 		projectsOnScreen = true;
 	} else {
-		document.getElementById('expNav').style.color = textHoverColor;
-		content = document.getElementsByClassName('expContent');
-		imgs = document.getElementsByClassName('expImg');
+		contentDiv = document.getElementById('experience-container');
 		experienceOnScreen = true;
 	}
 	
 	setTimeout(function() {
-		let i;
-		for(i = 0; i < content.length; i++) {
-			content[i].style.removeProperty('display');
-			content[i].children[0].style.color = backgroundColor;
-			content[i].children[0].style.transition = colorTransition
-
-			imgs[i].style.opacity = 0.0;
-			imgs[i].style.transition = opacityTransition
-
-		}
+		contentDiv.style.opacity = 0.0;			
+		contentDiv.style.removeProperty('display');
 	}, waitTime);
 	
 	setTimeout(function() {
-		let i;
-		for(i = 0; i < content.length; i++) {
-			content[i].children[0].style.color = navColor;
-			imgs[i].style.opacity = 100;
-		}
+		contentDiv.style.opacity = 100;
 	}, waitTime+20);
 }
 
@@ -119,39 +104,25 @@ function fadeResume() {
 }
 
 function fadeExperience() {
-	let expContent = document.getElementsByClassName('expContent');
-	let expImgs = document.getElementsByClassName('expImg');
-	let i;
+	let expContainer = document.getElementById('experience-container');
 	setTimeout(function() {
-		for(i = 0; i < expContent.length; i++) {
-			expContent[i].children[0].style.color = backgroundColor;
-			expImgs[i].style.opacity = 0.0;
-		}
+		expContainer.style.opacity = 0.0;
 	}, 0);
 	
 	setTimeout(function() {
-		for(i = 0; i < expContent.length; i++) {
-			expContent[i].style.display = "none";
-		}
+		expContainer.style.display = "none";
 	}, fadeTime);
 	experienceOnScreen = false;
 }
 
 function fadeProjects() {
-	let projContent = document.getElementsByClassName('projContent');
-	let projImgs = document.getElementsByClassName('projectImg');
-	let i;
+	let projContainer = document.getElementById('project-container');
 	setTimeout(function() {
-		for(i = 0; i < projContent.length; i++) {
-			projContent[i].children[0].style.color = backgroundColor;
-			projImgs[i].style.opacity = 0.0;
-		}
+		projContainer.style.opacity = 0.0;
 	}, 0);
 	
 	setTimeout(function() {
-		for(i = 0; i < projContent.length; i++) {
-			projContent[i].style.display = "none";
-		}
+		projContainer.style.display = "none"
 	}, fadeTime);
 	projectsOnScreen = false;
 }
