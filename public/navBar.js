@@ -1,5 +1,5 @@
-var loadTime = 500;  //the amount of time we want to wait when things load onto screen
-var fadeTime = 1500;  //1500 == 1.5s (the amount of time we need to wait for things to fade offscreen)
+var loadTime = 400;  //the amount of time we want to wait when things load onto screen
+var fadeTime = 850;  //1500 == 1.5s (the amount of time we need to wait for things to fade offscreen)
 					 //this time is based on the transition speeds being used
 
 var backgroundColor = "white";
@@ -11,7 +11,7 @@ var dropdownHeight = "250px";
 
 var colorTransition = "color 1.5s";
 var opacityTransition = "opacity 1.5s";
-var allTransition = "all 1.5s ease 0s";
+var allTransition = "all 0.85s ease 0s";
 
 //Booleans to determine what is currently on screen
 var resumeOnScreen;
