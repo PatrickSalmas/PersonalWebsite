@@ -1,26 +1,24 @@
 :root {
 	--bg-color: white;
 	--nav-color: black;
+	--nav-font-color: #edf0f1; 
+	--nav-hover-color: #0088a9;
 	--font-color: #7f7f7f;
 	--nav-height: 85px;
-	--color-transition: color 1.5s;
-	--opacity-transition: opacity 1.5s;
-	--height-transition: height 1.5s;
-	--dropdown-height: 250px;
+	--content-transition: all 0.85s ease 0s;
 }
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	/* background-color: #24252A; */
 }
 
 #myName {
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 600;
 	font-size: 25px;
-	color: #edf0f1;
+	color: var(--nav-font-color);
 	cursor: pointer;
 	margin-right: auto;
 }
@@ -29,7 +27,7 @@ li, a, button {
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
-	color: #edf0f1;
+	color: var(--nav-font-color);
 	text-decoration: none;
 }
 
@@ -56,7 +54,7 @@ header {
 }
 
 .nav__links li a:hover {
-	color: #0088a9;
+	color: var(--nav-hover-color);
 }
 
 button {
@@ -183,5 +181,5 @@ footer h1 {
 }
 
 #project-container, #experience-container {
-	transition: all 0.85s ease 0s
+	transition: var(--content-transition);
 }

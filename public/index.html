@@ -9,19 +9,12 @@
 <body onload="initLoad()">
 	<header>
 		<a href="index.html" id="myName">Patrick Salmas</a>
-		<!-- <nav style="margin-left: auto; margin-right: auto;"> -->
-			<!-- <ul class="nav__links"> -->
-				<!-- <li><a href="#">Project 0</a></li> -->
-				<!-- <li><a href="#">Project 1</a></li> -->
-				<!-- <li><a href="#">Project 2</a></li> -->
-			<!-- </ul> -->
-		<!-- </nav> -->
 		<nav>
 			<ul class="nav__links">
 				<li><a href="#">About</a></li>
 				<li><a href="#" id="resumeNav" onclick="loadResume()">Resume</a></li>
-				<li><a href="#" id="expNav" onclick="displayContent(99,'exp')">Experience</a></li>
-				<li><a href="#" id="projNav" onclick="displayContent(99,'proj')">Projects</a></li>
+				<li><a href="#" id="expNav" onclick="displayContent('exp')">Experience</a></li>
+				<li><a href="#" id="projNav" onclick="displayContent('proj')">Projects</a></li>
 			</ul>
 		</nav>
 		<a class="cta" href="#"><button>Contact</button></a>
@@ -29,12 +22,10 @@
 	<div id="content">
 			<div id="homeImgDiv">
 				<img id="homeImg" src="media/los_angeles_text1_electric.png">
-			</div>
-		
+			</div>	
 			<div id="resume" style="display: none;">
 				<iframe src="media/dummy_resume.pdf" width="800px" height="800px"></iframe>
 			</div>
-			
 			<div id="experience-container" class="card-container" style="display: none;">
 				<div class="card-container-title"><h1>Experience</h1></div>
 				<div class="card-list">
@@ -83,7 +74,6 @@
 							</p>
 							<a href="#">Read More</a>
 						</div>
-						<!-- <hr> -->
 					</div>
 					<div id="proj1" name="proj1" class="card projContent">
 						<img class="card-img projectImg" src="media/pulpfiction.jpg" alt="dummy">

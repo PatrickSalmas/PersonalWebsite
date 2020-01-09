@@ -7,10 +7,6 @@ var navColor = "#24252A";
 var textColor = "#7f7f7f";
 var textHoverColor = "#0088a9";
 
-var dropdownHeight = "250px";
-
-var colorTransition = "color 1.5s";
-var opacityTransition = "opacity 1.5s";
 var allTransition = "all 0.85s ease 0s";
 
 //Booleans to determine what is currently on screen
@@ -23,19 +19,18 @@ function initLoad() {
 	homepageOnScreen = true;
 }
 
-function displayContent(pos,contentType) {
-	let waitTime;
-	
+function displayContent(contentType) {
+	let waitTime;	
 	waitTime = clearScreen();
 	
-	let content;
-	let imgs;
 	let contentDiv;
 	
 	if(contentType == "proj") {
+		document.getElementById('projNav').style.color = textHoverColor;
 		contentDiv = document.getElementById('project-container');
 		projectsOnScreen = true;
 	} else {
+		document.getElementById('expNav').style.color = textHoverColor;
 		contentDiv = document.getElementById('experience-container');
 		experienceOnScreen = true;
 	}
@@ -150,7 +145,6 @@ function loadHomeImg() {
 	
 	setTimeout(function() {
 		homeImgDiv.style.removeProperty('display');
-		// homeImg.style.opacity = 0.0;
 	}, loadTime);
 	
 	setTimeout(function() {
@@ -170,7 +164,6 @@ function loadResume() {
 		resume.style.removeProperty('display');
 		resume.style.opacity = 0.0;
 		resume.style.transition = allTransition;
-		// resumeNav.style.transition = allTransition;
 	}, waitTime);
 	
 	setTimeout(function() {
@@ -178,18 +171,4 @@ function loadResume() {
 	}, waitTime+20);
 	
 	resumeOnScreen = true;
-}
-
-function loadHomeLink(waitTime) {
-	let homeLink = document.getElementById('homeLink');
-	
-	setTimeout(function() {
-		homeLink.style.removeProperty('display');
-		homeLink.style.color = navColor;
-		homeLink.style.transition = colorTransition;
-	}, waitTime);
-	
-	setTimeout(function() {
-		homeLink.style.color = textColor;
-	}, waitTime+20);
 }
