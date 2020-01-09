@@ -1,9 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+
+
 :root {
-	--bg-color: white;
-	--nav-color: black;
-	--nav-font-color: #edf0f1; 
+	/* Default */
+	/* --bg-color: white; */
+	/* --nav-color: #24252A; */
+	/* --nav-font-color: #edf0f1;  */
+	/* --content-title-color: black */
+	/* --font-family: 'Alegreya Sans SC', sans-serif; */
+
+	
+	/* Minimal warm */
+	--bg-color: #eae7dc;
+	--btn-bg-color: rgba(0,136,169,0.55);
+	--btn-hover-color: rgba(0,136,169,1);
+	--btn-border: none;
+	--btn-border-width: none;
+	--nav-color: #E14835;
+	--nav-border-bottom: none;
+	--nav-font-color: #eae7dc;
+	--content-title-color: #E14835;
+	--font-color: #2e2d2a;
+	--font-family: 'Barlow', sans-serif;
+	--card-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+	
+	
+	/* Bright Accent Colors */
+	/* --bg-color: #2f2fa2; */
+	/* --btn-bg-color: #242582; */
+	/* --btn-hover-color: rgba(246, 76, 114, 1); */
+	/* --btn-border-style: solid; */
+	/* --btn-border-width: 2px; */
+	/* --btn-border-color: #f64c72; */
+	/* --nav-color: #242582; */
+	/* --nav-border-bottom: 2px solid #f64c72; */
+	/* --nav-font-color: #eae7dc; */
+	/* --content-title-color: #eae7dc; */
+	/* --font-color: #eae7dc; */
+	/* --font-family: 'Barlow', sans-serif; */
+	/* --card-shadow: 0 0 0.5em #f64c72; */
+
+	
 	--nav-hover-color: #0088a9;
-	--font-color: #7f7f7f;
+	/* --font-color: #7f7f7f; */
 	--nav-height: 85px;
 	--content-transition: all 0.85s ease 0s;
 }
@@ -14,19 +54,35 @@
 	padding: 0;
 }
 
+body {
+	background-color: var(--bg-color);
+}
+
+h2 {
+	color: var(--font-color);
+	font-family: var(--font-family);
+	font-weight: 550px;
+}
+
+p {
+	color: var(--font-color);
+	font-family: var(--font-family);
+	font-weight: 550px;
+}
+
 #myName {
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-weight: 600;
-	font-size: 25px;
+	font-family: var(--font-family);
+	font-weight: 550;
+	font-size: 40px;
 	color: var(--nav-font-color);
 	cursor: pointer;
 	margin-right: auto;
 }
 
 li, a, button {
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-weight: 500;
-	font-size: 16px;
+	font-family: var(--font-family);
+	font-weight: 550;
+	font-size: 18px;
 	color: var(--nav-font-color);
 	text-decoration: none;
 }
@@ -37,7 +93,11 @@ header {
 	justify-content: flex-end;
 	align-items: center;
 	padding: 30px 10%;
-	background-color: #24252A;
+	background-color: var(--nav-color);
+	border-bottom: var(--nav-border-bottom);
+	/* border-width: 2px; */
+	/* border-color: black; */
+	/* border-style: solid; */
 }
 
 .nav__links {
@@ -60,15 +120,17 @@ header {
 button {
 	margin-left: 20px;
 	padding: 9px 25px;
-	background-color: rgba(0,136,169,1);
-	border: none;
+	background-color: var(--btn-bg-color);
+	border-style: var(--btn-border-style);
+	border-color: var(--btn-border-color);
 	border-radius: 50px;
+	border-width: var(--btn-border-width);
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
 }
 
 button:hover {
-	background-color: rgba(0,136,169,0.8);
+	background-color: var(--btn-hover-color);
 }
 
 img {
@@ -119,8 +181,10 @@ nav {
 }
 
 .card-container-title h1 {
-	font-family: 'Alegreya Sans SC', sans-serif;
+	font-family: var(--font-family);
 	font-size: 40px;
+	font-weight: 550px;
+	color: var(--content-title-color);
 }
 
 .card-list {
@@ -136,8 +200,9 @@ footer {
 }
 
 footer h1 {
-	font-family: 'Alegreya Sans SC', sans-serif;
+	font-family: var(--font-family);
 	font-size: 40px;
+	/* font-weight: 550px; */
 	color: yellow;
 }
 
@@ -150,7 +215,7 @@ footer h1 {
 		"img content";
 		
 	grid-column-gap: 1.5em;
-	box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+	box-shadow: var(--card-shadow);
 	padding: 1.5em;
 	margin: 1.5em;
 	/* grid-template:  */
