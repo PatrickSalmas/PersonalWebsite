@@ -2,13 +2,18 @@
 <head>
 	<meta charset="utf-8">
 	<title>Patrick Salmas</title>
-	<script type="text/javascript" src="navBar.js"></script>
 	<link rel="stylesheet" href="index.css">
-	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="BrightAccentColors.css">
+	<link rel="stylesheet" href="minimal-warm.css">
+	<script type="text/javascript" src="navBar.js"></script>
 </head>
 <body onload="initLoad()">
 	<header>
 		<a href="index.html" id="myName">PATRICK SALMAS</a>
+		<nav style="margin-left: auto; margin-right: auto;">
+			<button onclick="changeStyle('blue')">Blue</button>
+			<button onclick="changeStyle('warm')">Warm</button>
+		</nav>
 		<nav>
 			<ul class="nav__links">
 				<li><a href="#">About</a></li>

@@ -14,9 +14,17 @@ var resumeOnScreen;
 var projectsOnScreen;
 var experienceOnScreen;
 var homepageOnScreen;
+var defaultStyle;
 
 function initLoad() {
 	homepageOnScreen = true;
+	defaultStyle = document.styleSheets.length-1;
+	
+	let i;
+	for(i = 1; i < document.styleSheets.length; i++) {
+		document.styleSheets[i].disabled = true;
+	}
+	document.styleSheets[defaultStyle].disabled = false;
 }
 
 function displayContent(contentType) {
@@ -171,4 +179,23 @@ function loadResume() {
 	}, waitTime+20);
 	
 	resumeOnScreen = true;
+}
+
+
+function changeStyle(scheme) {
+	// var stylesheet = document.styleSheets[0];
+	// stylesheet.disabled = true;
+	let stylesheet;
+	let i;
+	for(i = 1; i < document.styleSheets.length; i++) {
+		document.styleSheets[i].disabled = true;
+	}
+	
+	if(scheme == "blue") {
+		document.styleSheets[1].disabled = false;
+	} else if(scheme == "warm") {
+		document.styleSheets[2].disabled = false;
+	}
+	
+	
 }

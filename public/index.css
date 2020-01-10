@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700&display=swap');
 
 
-:root {
+/* :root { */
 	/* Default */
 	/* --bg-color: white; */
 	/* --nav-color: #24252A; */
@@ -11,19 +12,19 @@
 	/* --font-family: 'Alegreya Sans SC', sans-serif; */
 
 	
-	/* Minimal warm */
-	--bg-color: #eae7dc;
-	--btn-bg-color: rgba(0,136,169,0.55);
-	--btn-hover-color: rgba(0,136,169,1);
-	--btn-border: none;
-	--btn-border-width: none;
-	--nav-color: #E14835;
-	--nav-border-bottom: none;
-	--nav-font-color: #eae7dc;
-	--content-title-color: #E14835;
-	--font-color: #2e2d2a;
-	--font-family: 'Barlow', sans-serif;
-	--card-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+	/* Minimal, warm */
+	/* --bg-color: #eae7dc; */
+	/* --btn-bg-color: rgba(0,136,169,0.55); */
+	/* --btn-hover-color: rgba(0,136,169,1); */
+	/* --btn-border: none; */
+	/* --btn-border-width: none; */
+	/* --nav-color: #E14835; */
+	/* --nav-border-bottom: none; */
+	/* --nav-font-color: #eae7dc; */
+	/* --content-title-color: #E14835; */
+	/* --font-color: #2e2d2a; */
+	/* --font-family: 'Barlow', sans-serif; */
+	/* --card-shadow: 0 0 1em rgba(0, 0, 0, 0.5); */
 	
 	
 	/* Bright Accent Colors */
@@ -42,11 +43,11 @@
 	/* --card-shadow: 0 0 0.5em #f64c72; */
 
 	
-	--nav-hover-color: #0088a9;
+	/* --nav-hover-color: #0088a9; */
 	/* --font-color: #7f7f7f; */
-	--nav-height: 85px;
-	--content-transition: all 0.85s ease 0s;
-}
+	/* --nav-height: 85px; */
+	/* --content-transition: all 0.85s ease 0s; */
+/* } */
 
 * {
 	box-sizing: border-box;

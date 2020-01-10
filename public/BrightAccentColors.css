@@ -1,0 +1,22 @@
+:root {	
+	/* Bright Accent Colors */
+	--bg-color: #2f2fa2;
+	--btn-bg-color: #242582;
+	--btn-hover-color: rgba(246, 76, 114, 1);
+	--btn-border-style: solid;
+	--btn-border-width: 2px;
+	--btn-border-color: #f64c72;
+	--nav-color: #242582;
+	--nav-border-bottom: 2px solid #f64c72;
+	--nav-font-color: #eae7dc;
+	--content-title-color: #eae7dc;
+	--font-color: #eae7dc;
+	--font-family: 'Alegreya Sans SC', sans-serif;
+	--card-shadow: 0 0 0.5em #f64c72;
+
+	
+	--nav-hover-color: #0088a9;
+	/* --font-color: #7f7f7f; */
+	--nav-height: 85px;
+	--content-transition: all 0.85s ease 0s;
+}
