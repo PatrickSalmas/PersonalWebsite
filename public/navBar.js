@@ -1,6 +1,9 @@
 var loadTime = 400;  //the amount of time we want to wait when things load onto screen
 var fadeTime = 850;  //1500 == 1.5s (the amount of time we need to wait for things to fade offscreen)
 					 //this time is based on the transition speeds being used
+					 
+loadTime = 0;
+fadeTime = 0;
 
 var backgroundColor = "white";
 var navColor = "#24252A";
