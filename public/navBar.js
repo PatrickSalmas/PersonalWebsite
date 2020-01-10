@@ -14,11 +14,11 @@ var resumeOnScreen;
 var projectsOnScreen;
 var experienceOnScreen;
 var homepageOnScreen;
-var defaultStyle;
+var defaultStyle = 2;  //The index of the default style sheet in document.styleSheets
 
 function initLoad() {
 	homepageOnScreen = true;
-	defaultStyle = document.styleSheets.length-1;
+	// defaultStyle = document.styleSheets.length-1;
 	
 	let i;
 	for(i = 1; i < document.styleSheets.length; i++) {
