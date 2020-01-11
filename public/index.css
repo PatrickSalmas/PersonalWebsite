@@ -165,10 +165,10 @@ img {
 .card-container {
 	display: grid;
 	grid-template-rows: 10vh auto;
-	grid-template-columns: 1fr 7fr 1fr;
+	grid-template-columns: 1fr 16fr 4fr 0fr;
 	grid-template-areas:
-		"title title title"
-		". card-list .";
+		"title title title title"
+		". card-list logo-list .";
 }
 
 nav {
@@ -191,6 +191,18 @@ nav {
 
 .card-list {
 	grid-area: card-list;
+}
+
+.logo-img {
+	height: 200px;
+	width: 200px;
+	/* height: 100%; */
+	max-width: 100%;
+	margin-bottom: 70px;
+}
+
+.logo-list {
+	grid-area: logo-list;
 }
 
 footer {
