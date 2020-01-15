@@ -35,13 +35,16 @@ function displayContent(contentType) {
 	waitTime = clearScreen();
 	
 	let contentDiv;
+	let activeNav;
 	
 	if(contentType == "proj") {
-		document.getElementById('projNav').style.color = textHoverColor;
+		activeNav = document.getElementById('projNav');
+		activeNav.classList.add('active-nav');
 		contentDiv = document.getElementById('project-container');
 		projectsOnScreen = true;
 	} else {
-		document.getElementById('expNav').style.color = textHoverColor;
+		activeNav = document.getElementById('expNav');
+		activeNav.classList.add('active-nav');
 		contentDiv = document.getElementById('experience-container');
 		experienceOnScreen = true;
 	}
@@ -65,17 +68,14 @@ function clearScreen() {
 		fadeHomeImg();
 		waitTime = fadeTime;
 	} else if(resumeOnScreen) {
-		document.getElementById('resumeNav').style.removeProperty('color');
 		resumeOnScreen = false;
 		waitTime = fadeTime;  //We need to increase the loadTime to account for the
 							  //transition speed so that whatever is fading off the screen
 							  //has enough time. May want to eventually decrease the transition speed
 	} else if(projectsOnScreen) {
-		document.getElementById('projNav').style.removeProperty('color');
 		projectsOnScreen = false;
 		waitTime = fadeTime;
 	} else if(experienceOnScreen) {
-		document.getElementById('expNav').style.removeProperty('color');
 		experienceOnScreen = false;
 		waitTime = fadeTime;
 	} else {
@@ -86,12 +86,19 @@ function clearScreen() {
 }
 
 //"Refactor prototype" ... i guess
+//Clears content from screen with class name of 'to-remove'
+//"Deactivates" the active nav option (removes hover color)
 function removeElements() {
 	let toFade = document.getElementsByClassName('to-remove');
 	while(toFade.length != 0) {
 		toFade[0].style.opacity = 0.0;
 		toFade[0].style.display = "none";
 		toFade[0].classList.remove('to-remove');
+	}
+	
+	let activeNav = document.getElementsByClassName('active-nav');
+	while(activeNav.length != 0) {
+		activeNav[0].classList.remove('active-nav');
 	}
 }
 
@@ -144,7 +151,11 @@ function loadResume() {
 	let waitTime;
 	waitTime = clearScreen();
 
-	document.getElementById('resumeNav').style.color = textHoverColor;
+	let activeNav = document.getElementById('resumeNav'); 
+	// activeNav.style.color = textHoverColor;
+	activeNav.classList.add('active-nav');
+	
+	
 	let resume = document.getElementById('resume');
 	resume.classList.add('to-remove');
 	

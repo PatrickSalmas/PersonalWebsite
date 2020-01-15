@@ -119,6 +119,10 @@ header {
 	color: var(--nav-hover-color);
 }
 
+.active-nav {
+	color: var(--nav-hover-color);
+}
+
 button {
 	margin-left: 20px;
 	padding: 9px 25px;
