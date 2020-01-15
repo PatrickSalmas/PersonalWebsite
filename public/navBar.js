@@ -46,6 +46,7 @@ function displayContent(contentType) {
 		experienceOnScreen = true;
 	}
 	
+	contentDiv.classList.add('to-remove');
 	setTimeout(function() {
 		contentDiv.style.opacity = 0.0;			
 		contentDiv.style.removeProperty('display');
@@ -65,17 +66,17 @@ function clearScreen() {
 		waitTime = fadeTime;
 	} else if(resumeOnScreen) {
 		document.getElementById('resumeNav').style.removeProperty('color');
-		fadeResume();
+		resumeOnScreen = false;
 		waitTime = fadeTime;  //We need to increase the loadTime to account for the
 							  //transition speed so that whatever is fading off the screen
 							  //has enough time. May want to eventually decrease the transition speed
 	} else if(projectsOnScreen) {
 		document.getElementById('projNav').style.removeProperty('color');
-		fadeProjects();
+		projectsOnScreen = false;
 		waitTime = fadeTime;
 	} else if(experienceOnScreen) {
 		document.getElementById('expNav').style.removeProperty('color');
-		fadeExperience();
+		experienceOnScreen = false;
 		waitTime = fadeTime;
 	} else {
 		waitTime = loadTime;
@@ -106,43 +107,6 @@ function fadeHomeImg() {
 		// homeImgDiv.style.display = "none";
 	}, fadeTime);
 	homepageOnScreen = false;
-}
-
-function fadeResume() {
-	let resume = document.getElementById('resume');
-	setTimeout(function() {
-		resume.style.opacity = 0.0;
-	}, 0);
-	
-	setTimeout(function() {
-		resume.style.display = "none";
-	}, fadeTime);
-	
-	resumeOnScreen = false;
-}
-
-function fadeExperience() {
-	let expContainer = document.getElementById('experience-container');
-	setTimeout(function() {
-		expContainer.style.opacity = 0.0;
-	}, 0);
-	
-	setTimeout(function() {
-		expContainer.style.display = "none";
-	}, fadeTime);
-	experienceOnScreen = false;
-}
-
-function fadeProjects() {
-	let projContainer = document.getElementById('project-container');
-	setTimeout(function() {
-		projContainer.style.opacity = 0.0;
-	}, 0);
-	
-	setTimeout(function() {
-		projContainer.style.display = "none"
-	}, fadeTime);
-	projectsOnScreen = false;
 }
 
 function loadHomeContent() {
@@ -182,6 +146,7 @@ function loadResume() {
 
 	document.getElementById('resumeNav').style.color = textHoverColor;
 	let resume = document.getElementById('resume');
+	resume.classList.add('to-remove');
 	
 	setTimeout(function() {
 		resume.style.removeProperty('display');
