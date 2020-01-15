@@ -59,51 +59,6 @@ function removeElements() {
 	}
 }
 
-function fadeHomeImg() {
-	let homeImg = document.getElementById('homeImg');
-	let homeImgDiv = document.getElementById('homeImgDiv');
-	
-	setTimeout(function() {
-		// homeImg.style.opacity = 0.0;
-	}, 0);
-	
-	setTimeout(function() {
-		// homeImgDiv.style.display = "none";
-	}, fadeTime);
-	homepageOnScreen = false;
-}
-
-function loadHomeContent() {
-	//fade current content
-	let waitTime;
-	if(projectsOnScreen) {
-		fadeProjects();
-		waitTime = fadeTime;
-	} else if(experienceOnScreen) {
-		fadeExperience();
-		waitTime = fadeTime;
-	}
-	
-	//Have no default content to load, but here is where we would want to handle that logic
-	//Also want to handle the logic for loading the default navOptions
-	loadDefaultNav(waitTime);
-	loadHomeImg();
-}
-
-function loadHomeImg() {
-	let homeImg = document.getElementById('homeImg');
-	let homeImgDiv = document.getElementById('homeImgDiv');
-	
-	setTimeout(function() {
-		homeImgDiv.style.removeProperty('display');
-	}, loadTime);
-	
-	setTimeout(function() {
-		homeImg.style.opacity = 100;
-	}, loadTime+20);
-	homepageOnScreen = true;
-}
-
 function changeStyle(scheme) {
 	// var stylesheet = document.styleSheets[0];
 	// stylesheet.disabled = true;
