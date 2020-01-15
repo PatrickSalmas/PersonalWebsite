@@ -31,8 +31,9 @@ function initLoad() {
 }
 
 function displayContent(contentType) {
-	let waitTime;	
-	waitTime = clearScreen();
+	let waitTime = 0;	
+	removeElements();
+	// waitTime = clearScreen();
 	
 	let contentDiv;
 	let activeNav;
@@ -60,30 +61,31 @@ function displayContent(contentType) {
 	}, waitTime+20);
 }
 
-function clearScreen() {
-	removeElements();
+// function clearScreen() {
+	// removeElements();
 	
-	let waitTime;
-	if (homepageOnScreen) {
-		fadeHomeImg();
-		waitTime = fadeTime;
-	} else if(resumeOnScreen) {
-		resumeOnScreen = false;
-		waitTime = fadeTime;  //We need to increase the loadTime to account for the
-							  //transition speed so that whatever is fading off the screen
-							  //has enough time. May want to eventually decrease the transition speed
-	} else if(projectsOnScreen) {
-		projectsOnScreen = false;
-		waitTime = fadeTime;
-	} else if(experienceOnScreen) {
-		experienceOnScreen = false;
-		waitTime = fadeTime;
-	} else {
-		waitTime = loadTime;
-	}
+	// // let waitTime;
+	// // if (homepageOnScreen) {
+		// // fadeHomeImg();
+		// // waitTime = fadeTime;
+	// // } else if(resumeOnScreen) {
+		// // // resumeOnScreen = false;
+		// // waitTime = fadeTime;  //We need to increase the loadTime to account for the
+							  // // //transition speed so that whatever is fading off the screen
+							  // // //has enough time. May want to eventually decrease the transition speed
+	// // } else if(projectsOnScreen) {
+		// // // projectsOnScreen = false;
+		// // waitTime = fadeTime;
+	// // } else if(experienceOnScreen) {
+		// // // experienceOnScreen = false;
+		// // waitTime = fadeTime;
+	// // } else {
+		// // waitTime = loadTime;
+	// // }
 	
-	return waitTime;
-}
+	// // return waitTime;
+	// return 0;
+// }
 
 //"Refactor prototype" ... i guess
 //Clears content from screen with class name of 'to-remove'
@@ -148,8 +150,9 @@ function loadHomeImg() {
 }
 
 function loadResume() {
-	let waitTime;
-	waitTime = clearScreen();
+	let waitTime = 0;
+	removeElements();
+	// waitTime = clearScreen();
 
 	let activeNav = document.getElementById('resumeNav'); 
 	// activeNav.style.color = textHoverColor;
