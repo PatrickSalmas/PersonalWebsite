@@ -262,3 +262,54 @@ footer h1 {
 #project-container, #experience-container {
 	transition: var(--content-transition);
 }
+
+span {
+	font-family: var(--font-family);
+	color: var(--content-title-color);
+}
+
+#introName {
+	margin-left: 30px;
+}
+
+#guideName {
+	font-size: 80px;
+	margin-left: 60px;
+	/* margin-top: 200px; */
+	/* margin-top: 30vh; */
+	
+}
+
+#prof {
+	margin-left: 30px;
+}
+
+#guideProf {
+	font-size: 60px;
+	margin-left: 60px;
+	margin-top: 25vh;
+}
+
+.hide-myName {
+	opacity: 0%;
+	transition: all 1.5s ease 0s;
+	position: absolute;
+	font-size: 80px;
+}
+
+.hide-prof { 
+	opacity: 0%;
+	transition: all 1.5s ease 0s;
+	margin-top: 25vh;
+	position: absolute;
+	font-size: 60px;
+}
+
+.underline {
+	opacity: 0%;
+	transition: all 3.0s ease 0s;
+	position: absolute;
+	margin-top: 365px;
+	margin-left: 30px;
+	font-size: 60px;
+}

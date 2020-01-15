@@ -1,5 +1,5 @@
 var loadTime = 400;  //the amount of time we want to wait when things load onto screen
-var fadeTime = 850;  //1500 == 1.5s (the amount of time we need to wait for things to fade offscreen)
+var fadeTime = 500;  //1500 == 1.5s (the amount of time we need to wait for things to fade offscreen)
 					 //this time is based on the transition speeds being used
 					 
 loadTime = 0;
@@ -57,6 +57,8 @@ function displayContent(contentType) {
 }
 
 function clearScreen() {
+	removeElements();
+	
 	let waitTime;
 	if (homepageOnScreen) {
 		fadeHomeImg();
@@ -82,16 +84,26 @@ function clearScreen() {
 	return waitTime;
 }
 
+//"Refactor prototype" ... i guess
+function removeElements() {
+	let toFade = document.getElementsByClassName('to-remove');
+	while(toFade.length != 0) {
+		toFade[0].style.opacity = 0.0;
+		toFade[0].style.display = "none";
+		toFade[0].classList.remove('to-remove');
+	}
+}
+
 function fadeHomeImg() {
 	let homeImg = document.getElementById('homeImg');
 	let homeImgDiv = document.getElementById('homeImgDiv');
 	
 	setTimeout(function() {
-		homeImg.style.opacity = 0.0;
+		// homeImg.style.opacity = 0.0;
 	}, 0);
 	
 	setTimeout(function() {
-		homeImgDiv.style.display = "none";
+		// homeImgDiv.style.display = "none";
 	}, fadeTime);
 	homepageOnScreen = false;
 }
