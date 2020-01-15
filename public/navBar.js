@@ -26,32 +26,20 @@ function initLoad() {
 	document.styleSheets[defaultStyle].disabled = false;
 }
 
-function displayContent(contentType) {
-	let waitTime = 0;	
+function dispContent(contentId,navOp) {
+	// console.log(this);
 	removeElements();
+	let content = document.getElementById(contentId);
 	
-	let contentDiv;
-	let activeNav;
+	document.getElementById(navOp).classList.add('active-nav');
+	content.classList.add('to-remove');
 	
-	if(contentType == "proj") {
-		activeNav = document.getElementById('projNav');
-		activeNav.classList.add('active-nav');
-		contentDiv = document.getElementById('project-container');
-	} else {
-		activeNav = document.getElementById('expNav');
-		activeNav.classList.add('active-nav');
-		contentDiv = document.getElementById('experience-container');
-	}
-	
-	contentDiv.classList.add('to-remove');
-	setTimeout(function() {
-		contentDiv.style.opacity = 0.0;			
-		contentDiv.style.removeProperty('display');
-	}, waitTime);
+	content.style.opacity = 0.0;
+	content.style.removeProperty('display');
 	
 	setTimeout(function() {
-		contentDiv.style.opacity = 100;
-	}, waitTime+20);
+		content.style.opacity = 100;
+	}, 20);
 }
 
 //"Refactor prototype" ... i guess
@@ -116,28 +104,6 @@ function loadHomeImg() {
 	homepageOnScreen = true;
 }
 
-function loadResume() {
-	let waitTime = 0;
-	removeElements();
-
-	let activeNav = document.getElementById('resumeNav'); 
-	activeNav.classList.add('active-nav');
-	
-	let resume = document.getElementById('resume');
-	resume.classList.add('to-remove');
-	
-	setTimeout(function() {
-		resume.style.removeProperty('display');
-		resume.style.opacity = 0.0;
-		resume.style.transition = allTransition;
-	}, waitTime);
-	
-	setTimeout(function() {
-		resume.style.opacity = 100;
-	}, waitTime+20);	
-}
-
-
 function changeStyle(scheme) {
 	// var stylesheet = document.styleSheets[0];
 	// stylesheet.disabled = true;
@@ -152,6 +118,4 @@ function changeStyle(scheme) {
 	} else if(scheme == "warm") {
 		document.styleSheets[2].disabled = false;
 	}
-	
-	
 }
