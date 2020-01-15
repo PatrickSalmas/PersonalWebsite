@@ -49,10 +49,6 @@ setTimeout(function() {
 	let prof = Array.from(document.getElementsByClassName('hide-prof'));
 	let underline = Array.from(document.getElementsByClassName('underline'));
 	let intro = myName.concat(prof,underline);
-	console.log(myName.length);
-	console.log(prof.length);
-	console.log(underline.length);
-	console.log(intro.length);
 	
 	for(let i = 0; i < intro.length; i++) {
 		intro[i].style.transition = "opacity 0.3s ease 0s";

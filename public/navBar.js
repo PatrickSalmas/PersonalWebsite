@@ -13,14 +13,10 @@ var textHoverColor = "#0088a9";
 var allTransition = "all 0.85s ease 0s";
 
 //Booleans to determine what is currently on screen
-var resumeOnScreen;
-var projectsOnScreen;
-var experienceOnScreen;
-var homepageOnScreen;
 var defaultStyle = 2;  //The index of the default style sheet in document.styleSheets
 
 function initLoad() {
-	homepageOnScreen = true;
+	// homepageOnScreen = true;
 	// defaultStyle = document.styleSheets.length-1;
 	
 	let i;
@@ -33,7 +29,6 @@ function initLoad() {
 function displayContent(contentType) {
 	let waitTime = 0;	
 	removeElements();
-	// waitTime = clearScreen();
 	
 	let contentDiv;
 	let activeNav;
@@ -42,12 +37,10 @@ function displayContent(contentType) {
 		activeNav = document.getElementById('projNav');
 		activeNav.classList.add('active-nav');
 		contentDiv = document.getElementById('project-container');
-		projectsOnScreen = true;
 	} else {
 		activeNav = document.getElementById('expNav');
 		activeNav.classList.add('active-nav');
 		contentDiv = document.getElementById('experience-container');
-		experienceOnScreen = true;
 	}
 	
 	contentDiv.classList.add('to-remove');
@@ -60,32 +53,6 @@ function displayContent(contentType) {
 		contentDiv.style.opacity = 100;
 	}, waitTime+20);
 }
-
-// function clearScreen() {
-	// removeElements();
-	
-	// // let waitTime;
-	// // if (homepageOnScreen) {
-		// // fadeHomeImg();
-		// // waitTime = fadeTime;
-	// // } else if(resumeOnScreen) {
-		// // // resumeOnScreen = false;
-		// // waitTime = fadeTime;  //We need to increase the loadTime to account for the
-							  // // //transition speed so that whatever is fading off the screen
-							  // // //has enough time. May want to eventually decrease the transition speed
-	// // } else if(projectsOnScreen) {
-		// // // projectsOnScreen = false;
-		// // waitTime = fadeTime;
-	// // } else if(experienceOnScreen) {
-		// // // experienceOnScreen = false;
-		// // waitTime = fadeTime;
-	// // } else {
-		// // waitTime = loadTime;
-	// // }
-	
-	// // return waitTime;
-	// return 0;
-// }
 
 //"Refactor prototype" ... i guess
 //Clears content from screen with class name of 'to-remove'
@@ -152,12 +119,9 @@ function loadHomeImg() {
 function loadResume() {
 	let waitTime = 0;
 	removeElements();
-	// waitTime = clearScreen();
 
 	let activeNav = document.getElementById('resumeNav'); 
-	// activeNav.style.color = textHoverColor;
 	activeNav.classList.add('active-nav');
-	
 	
 	let resume = document.getElementById('resume');
 	resume.classList.add('to-remove');
@@ -170,9 +134,7 @@ function loadResume() {
 	
 	setTimeout(function() {
 		resume.style.opacity = 100;
-	}, waitTime+20);
-	
-	resumeOnScreen = true;
+	}, waitTime+20);	
 }
 
 
