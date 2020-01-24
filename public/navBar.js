@@ -59,9 +59,10 @@ function removeElements() {
 	}
 }
 
-function changeStyle(scheme) {
+function changeStyle() {
 	// var stylesheet = document.styleSheets[0];
 	// stylesheet.disabled = true;
+	let scheme = document.getElementById('scheme-select').value;
 	let stylesheet;
 	let i;
 	for(i = 1; i < document.styleSheets.length; i++) {

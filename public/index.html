@@ -11,8 +11,8 @@
 	<header>
 		<a class="logo" href="index.html" id="myName">PATRICK SALMAS</a>
 		<nav style="margin-left: auto; margin-right: auto;">
-			<button onclick="changeStyle('blue')">Blue</button>
-			<button onclick="changeStyle('warm')">Warm</button>
+			<!-- <button onclick="changeStyle('blue')">Blue</button> -->
+			<!-- <button onclick="changeStyle('warm')">Warm</button> -->
 		</nav>
 		<nav>
 			<ul class="nav__links">
@@ -23,6 +23,10 @@
 			</ul>
 		</nav>
 		<a class="cta" href="#"><button>Contact</button></a>
+		<select id="scheme-select" onchange="changeStyle()">
+			<option value="warm">Warm</option>
+			<option value="blue">Blue</option>
+		</select>
 	</header>
 	
 	<!-- Used for intro -->
