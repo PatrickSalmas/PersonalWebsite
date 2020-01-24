@@ -102,6 +102,15 @@ header {
 	/* border-style: solid; */
 }
 
+header .logo {
+	background-image: url("media/logo_small.png");
+	margin-left: -100px;
+	height: 90px;
+	width: 250px;
+	background-repeat: no-repeat;
+	text-indent: -999999px;
+}
+
 .nav__links {
 	list-style: none;
 }

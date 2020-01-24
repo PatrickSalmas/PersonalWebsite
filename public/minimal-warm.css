@@ -13,7 +13,7 @@
 	--content-title-color: #E14835;
 	--font-color: #2e2d2a;
 	--font-family: 'Barlow', sans-serif;
-	--card-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+	--card-shadow: 0 0 0.3em rgba(0, 0, 0, 0.5);
 	
 	/* --brain-img: url("media/brain_warm.jpg"); */
 	/* --light-bulbs-img: url("media/light_bulbs_warm.jpg"); */
