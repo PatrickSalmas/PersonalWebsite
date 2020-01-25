@@ -13,32 +13,38 @@ var textHoverColor = "#0088a9";
 var allTransition = "all 0.85s ease 0s";
 
 //Booleans to determine what is currently on screen
-var defaultStyle = 2;  //The index of the default style sheet in document.styleSheets
+var defaultStyle = 3;  //The index of the default style sheet in document.styleSheets
 
 function initLoad() {
 	// homepageOnScreen = true;
 	// defaultStyle = document.styleSheets.length-1;
 	
 	let i;
-	for(i = 1; i < document.styleSheets.length; i++) {
+	for(i = 2; i < document.styleSheets.length; i++) {
 		document.styleSheets[i].disabled = true;
 	}
 	document.styleSheets[defaultStyle].disabled = false;
 }
 
-function dispContent(contentId,navOp) {
+function dispContent(contentClass,navOp) {
 	// console.log(this);
 	removeElements();
-	let content = document.getElementById(contentId);
+	// let content = document.getElementById(contentId);
+	let content = document.getElementsByClassName(contentClass);
 	
 	document.getElementById(navOp).classList.add('active-nav');
-	content.classList.add('to-remove');
 	
-	content.style.opacity = 0.0;
-	content.style.removeProperty('display');
+	let i;
+	for(i = 0; i < content.length; i++) {
+		content[i].classList.add('to-remove');
+		content[i].style.opacity = 0.0;
+		content[i].style.removeProperty('display');
+	}
 	
 	setTimeout(function() {
-		content.style.opacity = 100;
+		for(i = 0; i < content.length; i++) {
+			content[i].style.opacity = 100;
+		}
 	}, 20);
 }
 

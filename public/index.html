@@ -3,6 +3,7 @@
 	<meta charset="utf-8">
 	<title>Patrick Salmas</title>
 	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/layout.css">
 	<link rel="stylesheet" href="styles/BrightAccentColors.css">
 	<link rel="stylesheet" href="styles/minimal-warm.css">
 	<script type="text/javascript" src="navBar.js"></script>
@@ -96,90 +97,74 @@
 			<!-- <div id="homeImgDiv"> -->
 				<!-- <img id="homeImg" src="media/los_angeles_text1_electric.png"> -->
 			<!-- </div>	 -->
-			<div id="resume" style="display: none;">
+			<div class="resume" style="display: none;">
 				<iframe src="media/dummy_resume.pdf" width="800px" height="800px"></iframe>
 			</div>
-			<div id="experience-container" class="card-container" style="display: none;">
-				<div class="card-container-title"><h1>EXPERIENCE</h1></div>
-				<div class="card-list">
-					<div id="exp0" name="exp0" class="card expContent">
-						<img class="card-img expImg" src="media/terminator.jpg" alt="dummy">
-						<h2 class="card-title">The Terminator</h2>
+			<div class="card-container-single experience-container" style="display: none;">
+				<div class="card-box">
+					<div class="card">
+						<img class="card-img" src="media/terminator.jpg" alt="dummy">
+						<h2 class="card-title">Terminator</h2>
 						<div class="card-content">
-							<p class="expDes">
+							<p> 
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
 							</p>
-							<a href="#">Read More</a>
 						</div>
 					</div>
-					<div id="exp1" name="exp1" class="card expContent">
-						<img class="card-img expImg" src="media/terminator2.jpg" alt="dummy">
+				</div>
+				<img id="brain" class="side-img" src="media/brain_warm.jpg">
+			</div>
+			<div class="card-container-single experience-container" style="display: none;">
+				<div class="card-box">
+					<div class="card">
+						<img class="card-img" src="media/terminator2.jpg" alt="dummy">
 						<h2 class="card-title">Terminator 2 Judgement Day</h2>
 						<div class="card-content">
-							<p class="expDes">
+							<p> 
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
 							</p>
-							<a href="#">Read More</a>
 						</div>
 					</div>
-					<div id="exp2" name="exp2" class="card expContent">
-						<img class="card-img expImg" src="media/terminator3.jpg" alt="dummy">
+				</div>
+				<img id="brain" class="side-img" src="media/light_bulbs_warm.jpg">
+			</div>
+			<div class="card-container-single experience-container" style="display: none;">
+				<div class="card-box">
+					<div class="card">
+						<img class="card-img" src="media/terminator3.jpg" alt="dummy">
 						<h2 class="card-title">Terminator 3 Rise of the Machines</h2>
 						<div class="card-content">
-							<p class="expDes">
+							<p> 
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
 							</p>
-							<a href="#">Read More</a>
 						</div>
 					</div>
 				</div>
-				<div class="logo-list"> 
-					<img id="brain" class="logo-img" src="media/brain_warm.jpg">
-					<img id="light-bulbs" class="logo-img" src="media/light_bulbs_warm.jpg">
-					<img id="planet" class="logo-img" src="media/planet_warm.jpg">
-					<img id="cloud" class="logo-img" src="media/chinese_cloud_warm.jpg">
-				</div>
+				<img id="brain" class="side-img" src="media/planet_warm.jpg">
 			</div>
 			
-			<div id="project-container" class="card-container" style="display: none;">
-				<div class="card-container-title"><h1>PROJECTS</h1></div>
-				<div class="card-list">
-					<div id="proj0" name="proj0" class="card projContent">
-						<img class="card-img projectImg" src="media/reservior_dogs.jpg" alt="dummy">
-						<h2 class="card-title">Reservior Dogs</h2>
-						<div class="card-content">
-							<p class="projectDes">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-							</p>
-							<a href="#">Read More</a>
-						</div>
-					</div>
-					<div id="proj1" name="proj1" class="card projContent">
-						<img class="card-img projectImg" src="media/pulpfiction.jpg" alt="dummy">
-						<h2 class="card-title">Pulp Fiction</h2>
-						<div class="card-content">
-							<p class="projectDes">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-							</p>
-							<a href="#">Read More</a>
-						</div>
-					</div>
-					<div id="proj2" name="proj2" class="card projContent">
-						<img class="card-img projectImg" src="media/jackie_brown.jpg" alt="dummy">
+			<div class="card-container-double project-container" style="display: none;">
+				<div class="card-box-left">
+					<div class="card-borderless">
+						<img class="card-img" src="media/jackie_brown.jpg" alt="dummy">
 						<h2 class="card-title">Jackie Brown</h2>
 						<div class="card-content">
-							<p class="projectDes">
+							<p> 
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
 							</p>
-							<a href="#">Read More</a>
 						</div>
 					</div>
 				</div>
-				<div class="logo-list"> 
-					<img id="brain" class="logo-img" src="media/brain_warm.jpg">
-					<img id="light-bulbs" class="logo-img" src="media/light_bulbs_warm.jpg">
-					<img id="planet" class="logo-img" src="media/planet_warm.jpg">
-					<img id="cloud" class="logo-img" src="media/chinese_cloud_warm.jpg">
+				<div class="card-box-right">
+					<div class="card-borderless">
+						<img class="card-img" src="media/pulpfiction.jpg" alt="dummy">
+						<h2 class="card-title">Pulp Fiction</h2>
+						<div class="card-content">
+							<p> 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 	</div>
