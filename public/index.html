@@ -12,22 +12,20 @@
 	<header>
 		<a class="logo" href="index.html" id="myName">PATRICK SALMAS</a>
 		<nav style="margin-left: auto; margin-right: auto;">
-			<!-- <button onclick="changeStyle('blue')">Blue</button> -->
-			<!-- <button onclick="changeStyle('warm')">Warm</button> -->
 		</nav>
 		<nav>
 			<ul class="nav__links">
 				<li><a href="#">About</a></li>
+				<li><a href="#" id="expNav" onclick="dispContent('experience-container','expNav')">Projects & Experience</a></li>
 				<li><a href="#" id="resumeNav" onclick="dispContent('resume','resumeNav')">Resume</a></li>
-				<li><a href="#" id="expNav" onclick="dispContent('experience-container','expNav')">Experience</a></li>
-				<li><a href="#" id="projNav" onclick="dispContent('project-container','projNav')">Projects</a></li>
+				<!-- <li><a href="#" id="projNav" onclick="dispContent('project-container','projNav')">Projects</a></li> -->
 			</ul>
 		</nav>
 		<a class="cta" href="#"><button>Contact</button></a>
-		<select id="scheme-select" onchange="changeStyle()">
-			<option value="warm">Warm</option>
-			<option value="blue">Blue</option>
-		</select>
+		<!-- <select id="scheme-select" onchange="changeStyle()"> -->
+			<!-- <option value="warm">Warm</option> -->
+			<!-- <option value="blue">Blue</option> -->
+		<!-- </select> -->
 	</header>
 	
 	<!-- Used for intro -->
@@ -100,48 +98,175 @@
 			<div class="resume" style="display: none;">
 				<iframe src="media/dummy_resume.pdf" width="800px" height="800px"></iframe>
 			</div>
-			<div class="card-container-single experience-container" style="display: none;">
-				<div class="card-box">
-					<div class="card">
-						<img class="card-img" src="media/terminator.jpg" alt="dummy">
-						<h2 class="card-title">Terminator</h2>
-						<div class="card-content">
-							<p> 
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-							</p>
+			<div class="column-left">
+				<h1 class="column-title experience-container" style="display: none;">Projects</h1>
+				<div class="card-container-left experience-container" style="display: none;">
+					<div class="card-box">
+						<div class="card-borderless">
+							<img class="card-img" src="media/terminator.jpg" alt="dummy">
+							<h2 class="card-title">Terminator</h2>
+							<div class="card-content">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<img id="brain" class="side-img" src="media/brain_warm.jpg">
-			</div>
-			<div class="card-container-single experience-container" style="display: none;">
-				<div class="card-box">
-					<div class="card">
-						<img class="card-img" src="media/terminator2.jpg" alt="dummy">
-						<h2 class="card-title">Terminator 2 Judgement Day</h2>
-						<div class="card-content">
-							<p> 
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-							</p>
+				<!-- <div class="card-container-right experience-container" style="display: none;"> -->
+					<!-- <div class="card-box"> -->
+						<!-- <div class="card-borderless"> -->
+							<!-- <img class="card-img" src="media/reservior_dogs.jpg" alt="dummy"> -->
+							<!-- <h2 class="card-title">Reservior Dogs</h2> -->
+							<!-- <div class="card-content"> -->
+								<!-- <p> -->
+								<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				<div class="card-container-left experience-container" style="display: none;">
+					<div class="card-box">
+						<div class="card-borderless">
+							<img class="card-img" src="media/terminator2.jpg" alt="dummy">
+							<h2 class="card-title">Terminator 2 Judgment Day</h2>
+							<div class="card-content">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<img id="brain" class="side-img" src="media/light_bulbs_warm.jpg">
-			</div>
-			<div class="card-container-single experience-container" style="display: none;">
-				<div class="card-box">
-					<div class="card">
-						<img class="card-img" src="media/terminator3.jpg" alt="dummy">
-						<h2 class="card-title">Terminator 3 Rise of the Machines</h2>
-						<div class="card-content">
-							<p> 
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-							</p>
+				<div class="card-container-left experience-container" style="display: none;">
+					<div class="card-box">
+						<div class="card-borderless">
+							<img class="card-img" src="media/terminator2.jpg" alt="dummy">
+							<h2 class="card-title">Terminator 3 Rise of the Machines</h2>
+							<div class="card-content">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<img id="brain" class="side-img" src="media/planet_warm.jpg">
+				<div class="card-container-left experience-container" style="display: none;">
+					<div class="card-box">
+						<div class="card-borderless">
+							<img class="card-img" src="media/terminator.jpg" alt="dummy">
+							<h2 class="card-title">Terminator</h2>
+							<div class="card-content">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container-left experience-container" style="display: none;">
+					<div class="card-box">
+						<div class="card-borderless">
+							<img class="card-img" src="media/terminator2.jpg" alt="dummy">
+							<h2 class="card-title">Terminator 2 Judgment Day</h2>
+							<div class="card-content">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container-left experience-container" style="display: none;">
+					<div class="card-box">
+						<div class="card-borderless">
+							<img class="card-img" src="media/terminator3.jpg" alt="dummy">
+							<h2 class="card-title">Terminator 3 Rise of the Machines</h2>
+							<div class="card-content">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+			
+			<div class="column-right">
+				<h1 class="column-title experience-container" style="display: none;">Work Experience</h1>
+				<div class="card-container-right experience-container" style="display: none;">
+					<div class="card-box">
+						<div class="card-borderless">
+							<img class="card-img" src="media/reservior_dogs.jpg" alt="dummy">
+							<h2 class="card-title">Reservior Dogs</h2>
+							<div class="card-content">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column-right">
+				<h1 class="column-title experience-container" style="display: none;">Curricular Experience</h1>
+				<div class="card-container-right experience-container" style="display: none;">
+					<div class="card-box">
+						<div class="card-borderless">
+							<img class="card-img" src="media/pulpfiction.jpg" alt="dummy">
+							<h2 class="card-title">Pulp Fiction</h2>
+							<div class="card-content">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="card-container-single experience-container" style="display: none;"> -->
+				<!-- <div class="card-box"> -->
+					<!-- <div class="card"> -->
+						<!-- <img class="card-img" src="media/three_wire.png" alt="dummy"> -->
+						<!-- <h2 class="card-title">Software Engineer Internship - Three Wire Systems</h2> -->
+						<!-- <div class="card-content"> -->
+							<!-- <p>  -->
+							<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. -->
+							<!-- </p> -->
+						<!-- </div> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				<!-- <img id="brain" class="side-img" src="media/brain_warm.jpg"> -->
+			<!-- </div> -->
+			<!-- <div class="card-container-single experience-container" style="display: none;"> -->
+				<!-- <div class="card-box"> -->
+					<!-- <div class="card"> -->
+						<!-- <img class="card-img" src="media/three_wire.png" alt="dummy"> -->
+						<!-- <h2 class="card-title">Software Developer Internship - Three Wire Systems</h2> -->
+						<!-- <div class="card-content"> -->
+							<!-- <p>  -->
+							<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. -->
+							<!-- </p> -->
+						<!-- </div> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				<!-- <img id="brain" class="side-img" src="media/light_bulbs_warm.jpg"> -->
+			<!-- </div> -->
+			<!-- <div class="card-container-single experience-container" style="display: none;"> -->
+				<!-- <div class="card-box"> -->
+					<!-- <div class="card"> -->
+						<!-- <img class="card-img" src="media/terminator3.jpg" alt="dummy"> -->
+						<!-- <h2 class="card-title">Terminator 3 Rise of the Machines</h2> -->
+						<!-- <div class="card-content"> -->
+							<!-- <p>  -->
+							<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. -->
+							<!-- </p> -->
+						<!-- </div> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				<!-- <img id="brain" class="side-img" src="media/planet_warm.jpg"> -->
+			<!-- </div> -->
 			
 			<div class="card-container-double project-container" style="display: none;">
 				<div class="card-box-left">
