@@ -113,6 +113,9 @@
 	/* margin: 25px; */
 }
 
+.card-container {
+	width: 100%;
+}
 .card-container-left {
 	/* display: grid; */
 	/* grid-template-rows: auto; */
