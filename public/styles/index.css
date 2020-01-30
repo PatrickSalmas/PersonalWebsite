@@ -244,3 +244,7 @@ span {
 	margin-left: 30px;
 	font-size: 60px;
 }
+
+.about-pic {
+	transform: rotate(90deg);
+}

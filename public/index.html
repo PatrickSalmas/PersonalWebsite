@@ -21,7 +21,7 @@
 		</nav>
 		<nav>
 			<ul class="nav__links">
-				<li><a href="#">About</a></li>
+				<li><a href="#" id="aboutNav" onclick="dispContent('about','aboutNav')">About</a></li>
 				<li><a href="#" id="expNav" onclick="dispContent('experience-container','expNav')">Projects & Experience</a></li>
 				<li><a href="#" id="resumeNav" onclick="dispContent('resume','resumeNav')">Resume</a></li>
 				<!-- <li><a href="#" id="projNav" onclick="dispContent('project-container','projNav')">Projects</a></li> -->
@@ -103,6 +103,10 @@
 			<!-- </div>	 -->
 			<div class="resume" style="display: none;">
 				<iframe src="media/dummy_resume.pdf" width="800px" height="800px"></iframe>
+			</div>
+			
+			<div class="about" style="display: none;">
+				<img class="about-pic" src="media/about-pic.jpg" alt="Patrick Salmas Photo">
 			</div>
 			
 			<div class="column-left">
