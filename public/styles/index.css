@@ -222,14 +222,14 @@ span {
 }
 
 .hide-myName {
-	opacity: 0%;
+	opacity: 0.0;
 	transition: all 1.5s ease 0s;
 	position: absolute;
 	font-size: 80px;
 }
 
 .hide-prof { 
-	opacity: 0%;
+	opacity: 0.0;
 	transition: all 1.5s ease 0s;
 	margin-top: 25vh;
 	position: absolute;
@@ -237,7 +237,7 @@ span {
 }
 
 .underline {
-	opacity: 0%;
+	opacity: 0.0;
 	transition: all 3.0s ease 0s;
 	position: absolute;
 	margin-top: 365px;
@@ -245,6 +245,7 @@ span {
 	font-size: 60px;
 }
 
-.about-pic {
+#about-pic {
 	transform: rotate(90deg);
+	margin-top: 30px;
 }

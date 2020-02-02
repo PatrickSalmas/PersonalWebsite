@@ -1,6 +1,6 @@
 function fadeinName(i,firstName) {
 	setTimeout(function() {
-		firstName[i].style.opacity = "100%";
+		firstName[i].style.opacity = "1.0";
 		firstName[i].style.display = "block";
 		// firstName[i].style.marginTop = "30vh";
 		firstName[i].style.marginTop = "325px";
@@ -9,7 +9,7 @@ function fadeinName(i,firstName) {
 
 function fadeinProf(i,prof) {
 	setTimeout(function() {
-		prof[i].style.opacity = "100%";
+		prof[i].style.opacity = "1.0";
 		prof[i].style.display = "block";
 		// prof[i].style.marginTop = "45vh";
 		prof[i].style.marginTop = "420px";
@@ -18,7 +18,7 @@ function fadeinProf(i,prof) {
 
 function fadeinUnderline(i,underline) {
 	setTimeout(function() {
-		underline[i].style.opacity = "100%";
+		underline[i].style.opacity = "1.0";
 		// underline[i].
 	}, 10*i);
 }
