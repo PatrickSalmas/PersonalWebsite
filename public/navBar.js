@@ -12,13 +12,13 @@ var textHoverColor = "#0088a9";
 
 var allTransition = "all 0.85s ease 0s";
 
-//Booleans to determine what is currently on screen
+var onHomeScreen;
+
 var defaultStyle = 3;  //The index of the default style sheet in document.styleSheets
 
 function initLoad() {
-	// homepageOnScreen = true;
-	// defaultStyle = document.styleSheets.length-1;
-	
+	onHomeScreen = true;
+		
 	let i;
 	for(i = 2; i < document.styleSheets.length; i++) {
 		document.styleSheets[i].disabled = true;
@@ -27,6 +27,10 @@ function initLoad() {
 }
 
 function dispContent(contentClass,navOp) {
+	if(onHomeScreen) {
+		document.body.style.removeProperty('overflow');
+		onHomeScreen = false;
+	}
 	// console.log(this);
 	removeElements();
 	// let content = document.getElementById(contentId);
