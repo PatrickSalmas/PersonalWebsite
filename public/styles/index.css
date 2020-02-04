@@ -148,7 +148,7 @@ button:hover {
 	background-color: var(--btn-hover-color);
 }
 
-img {
+#about-pic {
 	height: 440px;
 	width: 560px;
 }
@@ -162,12 +162,19 @@ img {
 }
 
 #homeImg {
-	transition: var(--opacity-transition);
+	/* transition: var(--opacity-transition); */
 	width: 100%;
+	/* height: 100vh; */
 	height: 89.65vh;
-	/* height: 100%; */
-	/* max-height: 100vh; */
-	margin: auto;
+	/* margin: auto; */
+}
+
+.home {
+	background-image: url(../media/mountains.jpeg);
+	width: 100%;
+	height: 82vh;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .resume {

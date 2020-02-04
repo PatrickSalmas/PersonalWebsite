@@ -14,7 +14,7 @@
 
 .grid-card-borderless {
 	display: grid;
-	grid-template-rows: 1fr 10fr;
+	grid-template-rows: 1fr 7fr;
 	grid-template-columns: 1fr 5fr;
 	grid-template-areas:
 		"card-img card-title"
