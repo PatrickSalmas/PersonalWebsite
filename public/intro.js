@@ -1,9 +1,22 @@
+var bodyHeight = document.body.clientHeight;
+var nameHeight = (bodyHeight / 2.90) + "px";
+var profHeight = (bodyHeight / 2.25) + "px";
+var underlineHeight = (bodyHeight / 2.58) + "px";
+
+var underline = document.getElementsByClassName('underline');
+for(let i = 0; i < underline.length; i++) {
+	underline[i].style.marginTop = underlineHeight;
+}
+
+// alert(height);
+
 function fadeinName(i,firstName) {
 	setTimeout(function() {
 		firstName[i].style.opacity = "1.0";
 		firstName[i].style.display = "block";
 		// firstName[i].style.marginTop = "30vh";
-		firstName[i].style.marginTop = "325px";
+		// firstName[i].style.marginTop = "325px";
+		firstName[i].style.marginTop = nameHeight;
 	}, 200*i);
 }
 
@@ -12,7 +25,8 @@ function fadeinProf(i,prof) {
 		prof[i].style.opacity = "1.0";
 		prof[i].style.display = "block";
 		// prof[i].style.marginTop = "45vh";
-		prof[i].style.marginTop = "420px";
+		// prof[i].style.marginTop = "420px";
+		prof[i].style.marginTop = profHeight;
 	}, 200*i);
 }
 
@@ -36,7 +50,7 @@ for(i = 0; i < prof.length; i++) {
 }
 
 setTimeout(function() {
-	let underline = document.getElementsByClassName('underline');
+	// let underline = document.getElementsByClassName('underline');
 	for(i = 0; i < underline.length; i++) {
 		let mLeft = (i*5) + 30;
 		underline[i].style.marginLeft = parseFloat(mLeft,10) + "px";
@@ -52,6 +66,10 @@ setTimeout(function() {
 	
 	for(let i = 0; i < intro.length; i++) {
 		intro[i].style.transition = "opacity 0.3s ease 0s";
+	}
+	
+	for(let i = 0; i < myName.length; i++) {
+		// intro[i].style.marginTop = "41.5vh";
 	}
 	
 }, profTime);
