@@ -52,7 +52,6 @@ function dispContent(contentClass,navOp) {
 	}, 20);
 }
 
-//"Refactor prototype" ... i guess
 //Clears content from screen with class name of 'to-remove'
 //"Deactivates" the active nav option (removes hover color)
 function removeElements() {
