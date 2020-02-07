@@ -20,7 +20,7 @@
 		"card-img card-title"
 		"card-img card-content";
 		
-	grid-column-gap: 1.5em;
+	/* grid-column-gap: 1.5em; */
 	grid-row-gap: 15px;
 	box-shadow: 0 0 0.0em #f64c72;
 	

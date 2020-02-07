@@ -148,11 +148,6 @@ button:hover {
 	background-color: var(--btn-hover-color);
 }
 
-#about-pic {
-	height: 440px;
-	width: 560px;
-}
-
 .projectImg, .expImg {
 	float: left;
 }
@@ -176,6 +171,7 @@ button:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
+	/* overflow: hidden; */
 }
 
 .resume {
@@ -269,6 +265,9 @@ footer h1 {
 }
 
 #about-pic {
-	transform: rotate(90deg);
+	/* transform: rotate(90deg); */
 	margin-top: 30px;
+	/* margin-top: var(--nav-height); */
+	/* height: 440px; */
+	/* width: 560px; */
 }

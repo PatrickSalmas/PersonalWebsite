@@ -1,3 +1,8 @@
+document.body.style.overflow = "hidden";
+window.onbeforeunload = function(event) {
+	scroll(0,0);
+}
+
 var bodyHeight = document.body.clientHeight;
 var nameHeight = (bodyHeight / 2.90) + "px";
 var nameHeightOuter = ((bodyHeight / 2.90)) + "px";
