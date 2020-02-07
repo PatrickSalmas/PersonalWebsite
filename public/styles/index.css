@@ -103,7 +103,7 @@ header {
 }
 
 header .logo {
-	background-image: url("../media/logo_small.png");
+	background-image: url("../media/logo_transparent_background_small.png");
 	margin-left: -100px;
 	height: 90px;
 	width: 250px;
