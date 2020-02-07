@@ -170,11 +170,12 @@ button:hover {
 }
 
 .home {
-	background-image: url(../media/mountains.jpeg);
+	background-image: url(../media/richmond2.jpg);
 	width: 100%;
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: bottom;
 }
 
 .resume {
@@ -201,12 +202,7 @@ footer h1 {
 	transition: var(--content-transition);
 }
 
-span {
-	font-family: var(--font-family);
-	color: var(--content-title-color);
-}
-
-#introName {
+#introName, #introName-outer {
 	margin-left: 30px;
 }
 
@@ -228,11 +224,25 @@ span {
 	margin-top: 25vh;
 }
 
+.hide-myName, .hide-prof {
+	font-family: var(--font-family);
+	color: var(--content-title-color);
+}
+
+.hide-myName-outer, .hide-prof-outer {
+	font-family: var(--font-family);
+	color: black;
+}
+
 .hide-myName {
 	opacity: 0.0;
 	transition: all 1.5s ease 0s;
 	position: absolute;
 	font-size: 80px;
+}
+
+.hide-myName-outer {
+	font-size: 85px;
 }
 
 .hide-prof { 
@@ -243,6 +253,10 @@ span {
 	font-size: 60px;
 }
 
+.hide-prof-outer {
+	font-size: 65px;
+}
+
 .underline {
 	opacity: 0.0;
 	transition: all 3.0s ease 0s;
@@ -250,6 +264,8 @@ span {
 	/* margin-top: 365px; */
 	margin-left: 30px;
 	font-size: 60px;
+	font-family: var(--font-family);
+	color: var(--nav-font-color);
 }
 
 #about-pic {

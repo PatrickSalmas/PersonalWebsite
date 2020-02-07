@@ -1,6 +1,8 @@
 var bodyHeight = document.body.clientHeight;
 var nameHeight = (bodyHeight / 2.90) + "px";
-var profHeight = (bodyHeight / 2.25) + "px";
+var nameHeightOuter = ((bodyHeight / 2.90)) + "px";
+var profHeight = ((bodyHeight / 2.90) + 93) + "px";
+// var profHeight = (bodyHeight / 2.25) + "px";
 var underlineHeight = (bodyHeight / 2.58) + "px";
 
 var underline = document.getElementsByClassName('underline');
@@ -16,8 +18,12 @@ function fadeinName(i,firstName) {
 		firstName[i].style.display = "block";
 		// firstName[i].style.marginTop = "30vh";
 		// firstName[i].style.marginTop = "325px";
-		firstName[i].style.marginTop = nameHeight;
-	}, 200*i);
+		// if(firstName[i].classList.contains('hide-myName-outer')) {
+			// firstName[i].style.marginTop = nameHeightOuter;
+		// } else {
+			// firstName[i].style.marginTop = nameHeight;
+		// }
+	}, 75*i);
 }
 
 function fadeinProf(i,prof) {
@@ -27,7 +33,7 @@ function fadeinProf(i,prof) {
 		// prof[i].style.marginTop = "45vh";
 		// prof[i].style.marginTop = "420px";
 		prof[i].style.marginTop = profHeight;
-	}, 200*i);
+	}, 75*i);
 }
 
 function fadeinUnderline(i,underline) {
@@ -37,17 +43,33 @@ function fadeinUnderline(i,underline) {
 	}, 10*i);
 }
 
-let i;
-let firstName = document.getElementsByClassName('hide-myName');
+var i;
+var firstName = document.getElementsByClassName('hide-myName');
+// var firstNameOuter = document.querySelector("span.hide-myName-outer:not(.hide-myName)");
+// var firstNameOuter = document.getElementsByClassName('hide-myName-outer');
+var prof = document.getElementsByClassName('hide-prof');
+var profTime = (prof.length+10)*200;
 for(i = 0; i < firstName.length; i++) {
-	fadeinName(i,firstName);
+	if(firstName[i].classList.contains('hide-myName-outer')) {
+		firstName[i].style.marginTop = nameHeightOuter;
+	} else {
+		firstName[i].style.marginTop = nameHeight;
+	}
+}
+for(i = 0; i < prof.length; i++) {
+	prof[i].style.marginTop = profHeight;
 }
 
-let prof = document.getElementsByClassName('hide-prof');
-let profTime = (prof.length+10)*200;
-for(i = 0; i < prof.length; i++) {
-	fadeinProf(i,prof);
-}
+setTimeout(function() {	
+	for(i = 0; i < firstName.length; i++) {
+		fadeinName(i,firstName);
+		// fadeinName(i, firstNameOuter);
+	}
+	for(i = 0; i < prof.length; i++) {
+		fadeinProf(i,prof);
+	}
+}, 1000);
+
 
 setTimeout(function() {
 	// let underline = document.getElementsByClassName('underline');

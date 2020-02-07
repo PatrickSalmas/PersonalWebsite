@@ -30,34 +30,64 @@
 }
 
 /* Handles intro */
-#introName .hide-myName:nth-of-type(1) {margin-left: 30px;}
-#introName .hide-myName:nth-of-type(2) {margin-left: 75.5px;}
-#introName .hide-myName:nth-of-type(3) {margin-left: 119px;}
-#introName .hide-myName:nth-of-type(4) {margin-left: 164.5px;}
-#introName .hide-myName:nth-of-type(5) {margin-left: 213.3px;}
-#introName .hide-myName:nth-of-type(6) {margin-left: 234px;}
-#introName .hide-myName:nth-of-type(7) {margin-left: 282.5px;}
-#introName .hide-myName:nth-of-type(8) {margin-left: 347.6px;}
-#introName .hide-myName:nth-of-type(9) {margin-left: 394.2px;}
-#introName .hide-myName:nth-of-type(10) { margin-left: 443px; }
-#introName .hide-myName:nth-of-type(11) { margin-left: 488.2px; }
-#introName .hide-myName:nth-of-type(12) { margin-left: 545.3px; }
-#introName .hide-myName:nth-of-type(13) { margin-left: 591px; }
+#introName .hide-myName:nth-of-type(1) {margin-left: 22px;}
+#introName .hide-myName:nth-of-type(2) {margin-left: 26px;}
+#introName .hide-myName:nth-of-type(3) {margin-left: 71.5px;}
+#introName .hide-myName:nth-of-type(4) {margin-left: 75.5px;}
+#introName .hide-myName:nth-of-type(5) {margin-left: 115px;}
+#introName .hide-myName:nth-of-type(6) {margin-left: 119px;}
+#introName .hide-myName:nth-of-type(7) {margin-left: 160.5px;}
+#introName .hide-myName:nth-of-type(8) {margin-left: 164.5px;}
+#introName .hide-myName:nth-of-type(9) {margin-left: 209.3px;}
+#introName .hide-myName:nth-of-type(10) {margin-left: 213.3px;}
+#introName .hide-myName:nth-of-type(11) {margin-left: 230px;}
+#introName .hide-myName:nth-of-type(12) {margin-left: 234px;}
+#introName .hide-myName:nth-of-type(13) {margin-left: 278.5px;}
+#introName .hide-myName:nth-of-type(14) {margin-left: 282.5px;}
+#introName .hide-myName:nth-of-type(15) {margin-left: 343.6px;}
+#introName .hide-myName:nth-of-type(16) {margin-left: 347.6px;}
+#introName .hide-myName:nth-of-type(17) {margin-left: 390.2px;}
+#introName .hide-myName:nth-of-type(18) {margin-left: 394.2px;}
+#introName .hide-myName:nth-of-type(19) { margin-left: 439px; }
+#introName .hide-myName:nth-of-type(20) { margin-left: 443px; }
+#introName .hide-myName:nth-of-type(21) { margin-left: 484.2px; }
+#introName .hide-myName:nth-of-type(22) { margin-left: 488.2px; }
+#introName .hide-myName:nth-of-type(23) { margin-left: 541.3px; }
+#introName .hide-myName:nth-of-type(24) { margin-left: 545.3px; }
+#introName .hide-myName:nth-of-type(25) { margin-left: 587px; }
+#introName .hide-myName:nth-of-type(26) { margin-left: 591px; }
 /* #myName .hide-myName:nth-of-type(13) { margin-left: 190px; }  4pixels*/
 
 #prof .hide-prof:nth-of-type(1) { margin-left: 30px;  }
-#prof .hide-prof:nth-of-type(2) { margin-left: 65px;  }
-#prof .hide-prof:nth-of-type(3) { margin-left: 102.5px;  }
-#prof .hide-prof:nth-of-type(4) { margin-left: 136.5px;  }
-#prof .hide-prof:nth-of-type(5) { margin-left: 170.5px;  }
-#prof .hide-prof:nth-of-type(6) { margin-left: 217.5px;  }
-#prof .hide-prof:nth-of-type(7) { margin-left: 254px;  }
-#prof .hide-prof:nth-of-type(8) { margin-left: 291px; }
-#prof .hide-prof:nth-of-type(9) { margin-left: 339px; }
-#prof .hide-prof:nth-of-type(10) { margin-left:375.3px; }
-#prof .hide-prof:nth-of-type(11) { margin-left:416px; }
-#prof .hide-prof:nth-of-type(12) { margin-left:453px; }
-#prof .hide-prof:nth-of-type(13) { margin-left:468px; }
-#prof .hide-prof:nth-of-type(14) { margin-left:508px; }
-#prof .hide-prof:nth-of-type(15) { margin-left:544px; }
-#prof .hide-prof:nth-of-type(16) { margin-left:580px; }
+#prof .hide-prof:nth-of-type(2) { margin-left: 34px;  }
+#prof .hide-prof:nth-of-type(3) { margin-left: 65px;  }
+#prof .hide-prof:nth-of-type(4) { margin-left: 69px;  }
+#prof .hide-prof:nth-of-type(5) { margin-left: 102.5px;  }
+#prof .hide-prof:nth-of-type(6) { margin-left: 106.5px;  }
+#prof .hide-prof:nth-of-type(7) { margin-left: 136.5px;  }
+#prof .hide-prof:nth-of-type(8) { margin-left: 140.5px;  }
+#prof .hide-prof:nth-of-type(9) { margin-left: 170.5px;  }
+#prof .hide-prof:nth-of-type(10) { margin-left: 174.5px;  }
+#prof .hide-prof:nth-of-type(11) { margin-left: 217.5px;  }
+#prof .hide-prof:nth-of-type(12) { margin-left: 221.5px;  }
+#prof .hide-prof:nth-of-type(13) { margin-left: 254px;  }
+#prof .hide-prof:nth-of-type(14) { margin-left: 258px;  }
+#prof .hide-prof:nth-of-type(15) { margin-left: 291px; }
+#prof .hide-prof:nth-of-type(16) { margin-left: 295px; }
+#prof .hide-prof:nth-of-type(17) { margin-left: 339px; }
+#prof .hide-prof:nth-of-type(18) { margin-left: 343px; }
+#prof .hide-prof:nth-of-type(19) { margin-left:375.3px; }
+#prof .hide-prof:nth-of-type(20) { margin-left:379.3px; }
+#prof .hide-prof:nth-of-type(21) { margin-left:416px; }
+#prof .hide-prof:nth-of-type(22) { margin-left:420px; }
+#prof .hide-prof:nth-of-type(23) { margin-left:453px; }
+#prof .hide-prof:nth-of-type(24) { margin-left:457px; }
+#prof .hide-prof:nth-of-type(25) { margin-left:468px; }
+#prof .hide-prof:nth-of-type(26) { margin-left:472px; }
+#prof .hide-prof:nth-of-type(27) { margin-left:508px; }
+#prof .hide-prof:nth-of-type(28) { margin-left:512px; }
+#prof .hide-prof:nth-of-type(29) { margin-left:544px; }
+#prof .hide-prof:nth-of-type(30) { margin-left:548px; }
+#prof .hide-prof:nth-of-type(31) { margin-left:580px; }
+#prof .hide-prof:nth-of-type(32) { margin-left:584px; }
+
