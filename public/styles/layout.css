@@ -14,14 +14,14 @@
 
 .grid-card-borderless {
 	display: grid;
-	grid-template-rows: 1fr 7fr;
+	grid-template-rows: 1fr 10fr;
 	grid-template-columns: 1fr 5fr;
 	grid-template-areas:
 		"card-img card-title"
 		"card-img card-content";
 		
 	/* grid-column-gap: 1.5em; */
-	grid-row-gap: 15px;
+	grid-row-gap: 0px;
 	box-shadow: 0 0 0.0em #f64c72;
 	
 	padding: 1.5em;
