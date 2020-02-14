@@ -185,3 +185,50 @@
 	right: 50%;
 	display: inline-block;
 }
+
+.modal {
+	/* display: grid; */
+	/* grid-template-rows: 1fr 1fr; */
+	/* grid-template-columns: auto auto auto auto; */
+	/* grid-template-areas: */
+		/* "modal-prompt modal-prompt modal-prompt modal-prompt" */
+		/* ". . btn-confirm btn-cancel"; */
+		
+	/* grid-column-gap: 1.5em; */
+	/* box-shadow: 0 0 0.2em #f64c72; */
+	/* padding: 1.5em; */
+	/* margin: 1.5em; */
+	background-color: var(--bg-color);
+	text-align: center;
+}
+
+.modal-prompt {
+	/* grid-area: modal-prompt; */
+	margin: 25px 5px 0 5px;
+}
+
+.dialog-btn {
+	height: 30px;
+	border-radius: 5px;
+	line-height: 50%;
+	width: 100px;
+	text-align: center;
+	padding: 0px;
+}
+
+.btn-confirm {
+	/* grid-area: btn-confirm; */
+	margin-bottom: 0px;
+	margin-left: 70px; 
+}
+
+.btn-cancel {
+	/* grid-area: btn-cancel; */
+	margin-bottom: 0px;
+	margin-top: 50px;
+	margin-right: 0px;
+	margin-left: 5px;
+	background-color: var(--nav-color);
+}
+
+ 

@@ -271,3 +271,21 @@ footer h1 {
 	/* height: 440px; */
 	/* width: 560px; */
 }
+
+#contact-modal {
+	top: 38vh;
+	left: 38vw;
+	position: absolute;
+	height: 150px;
+	width: 325px;
+	/* z-index: 1; */
+}
+
+.disabled {
+	/* right_banner.setAttribute("style", "filter: grayscale(100%); opacity: 0.4; filter: alpha(opacity=40);"); */
+	filter: grayscale(100%);
+	opacity: 0.85;
+	filter: alpha(opacity=40); 
+	transition: none;
+	/* pointer-events: none; */
+}
