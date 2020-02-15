@@ -7,13 +7,15 @@ function loadModal(modalId) {
 	let content = document.getElementById('content');
 	let header = document.getElementById('header');
 
-
 	setTimeout(function() {
 		content.addEventListener("click", function() {
 			closeModal(modalId);
 		}, false);
 		header.addEventListener("click", function() {
 			closeModal(modalId);
+		}, false);
+		modal.addEventListener("click", function(ev) {
+			ev.stopPropagation();
 		}, false);
 	}, 1);
 	
