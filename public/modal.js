@@ -24,22 +24,13 @@ function loadModal(modalId) {
 }
 
 function closeModal(modalId) {
-	// let modal = document.getElementById(modalId);
-	// modal.parentNode.removeChild(modal);
 	document.getElementById('contact-modal-div').style.display = "none";
 	enableBackground();
 	enableBtnsLinks();
 	
-	// let content = document.getElementById('content');
 	let header = document.getElementsByTagName('header')[0];
-	
-	// let newContent = content.cloneNode(true);
-	let newHeader = header.cloneNode(true);
-	
-	
-	// content.parentNode.replaceChild(newContent, content);
+	let newHeader = header.cloneNode(true);	
 	header.parentNode.replaceChild(newHeader, header);
-
 }
 
 function disableBackground() {

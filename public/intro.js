@@ -50,8 +50,6 @@ function fadeinUnderline(i,underline) {
 
 var i;
 var firstName = document.getElementsByClassName('hide-myName');
-// var firstNameOuter = document.querySelector("span.hide-myName-outer:not(.hide-myName)");
-// var firstNameOuter = document.getElementsByClassName('hide-myName-outer');
 var prof = document.getElementsByClassName('hide-prof');
 var profTime = (prof.length+10)*200;
 for(i = 0; i < firstName.length; i++) {
@@ -68,7 +66,6 @@ for(i = 0; i < prof.length; i++) {
 setTimeout(function() {	
 	for(i = 0; i < firstName.length; i++) {
 		fadeinName(i,firstName);
-		// fadeinName(i, firstNameOuter);
 	}
 	for(i = 0; i < prof.length; i++) {
 		fadeinProf(i,prof);
@@ -77,7 +74,6 @@ setTimeout(function() {
 
 
 setTimeout(function() {
-	// let underline = document.getElementsByClassName('underline');
 	for(i = 0; i < underline.length; i++) {
 		let mLeft = (i*5) + 30;
 		underline[i].style.marginLeft = parseFloat(mLeft,10) + "px";
@@ -95,13 +91,8 @@ setTimeout(function() {
 		intro[i].style.transition = "opacity 0.3s ease 0s";
 	}
 	
-	for(let i = 0; i < myName.length; i++) {
+	// for(let i = 0; i < myName.length; i++) {
 		// intro[i].style.marginTop = "41.5vh";
-	}
+	// }
 	
 }, profTime);
-
-	// for(let i = 0; i < intro.length; i++) {
-		// intro[i].style.transition = "opacity 0.3s ease 0";
-	// }
-// }, (16*200)+(8*200));

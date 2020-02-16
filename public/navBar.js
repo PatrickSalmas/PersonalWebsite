@@ -31,9 +31,7 @@ function dispContent(contentClass,navOp) {
 		document.body.style.removeProperty('overflow');
 		onHomeScreen = false;
 	}
-	// console.log(this);
 	removeElements();
-	// let content = document.getElementById(contentId);
 	let content = document.getElementsByClassName(contentClass);
 	
 	document.getElementById(navOp).classList.add('active-nav');
