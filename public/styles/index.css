@@ -193,6 +193,17 @@ button:hover {
 	margin-bottom: 70px;
 }
 
+footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	/* margin-top: 90%; */
+	width: 100%;
+	background-color: red;
+	color: black;
+	text-align: center;
+}
+
 footer h1 {
 	font-family: var(--font-family);
 	font-size: 40px;

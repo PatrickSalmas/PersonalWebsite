@@ -1,4 +1,12 @@
 function loadModal(modalId) {
+	
+	//Temporary solution for dialog bug that is occuring in Firefox
+	//To remove
+	if(navigator.userAgent.includes("Firefox")) {
+		sendEmail();
+		return;
+	}
+	
 	document.getElementById('contact-modal-div').style.removeProperty('display');
 	let modal = document.getElementById(modalId);
 	disableBackground();
