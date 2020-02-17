@@ -27,8 +27,9 @@ function loadModal(modalId) {
 		}, false);
 	}, 1);
 	
-	
-	modal.show();
+	if(typeof modal.show === "function") {
+		modal.show();
+	}
 }
 
 function closeModal(modalId) {
