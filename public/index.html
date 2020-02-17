@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="styles/layout.css">
 	<link rel="stylesheet" href="styles/BrightAccentColors.css">
 	<link rel="stylesheet" href="styles/minimal-warm.css">
+	<script type="text/javascript" src="footer.js"></script>
 	<script type="text/javascript" src="navBar.js"></script>
 	<script type="text/javascript" src="modal.js"></script>
 </head>
@@ -256,18 +257,18 @@
 					</div>
 				</div>
 			</div>
-			
-			<div id="contact-modal-div" style="display: none">
-				<dialog id="contact-modal" class="modal">
-					<p class="modal-prompt">Would you like to send Patrick an email?</p>
-					<button onclick="sendEmail()" class="btn-confirm dialog-btn">Confirm</button>
-					<button onclick="closeModal('contact-modal')" class="btn-cancel dialog-btn">Cancel</button>
-				</dialog>
-			</div>
 	</div>
-	<!-- <footer> -->
-		<!-- <h1 class="card-container-footer">FOOTER</h1> -->
-	<!-- </footer> -->
+	
+	<div id="contact-modal-div" style="display: none">
+		<dialog id="contact-modal" class="modal">
+			<p class="modal-prompt">Would you like to send Patrick an email?</p>
+			<button onclick="sendEmail()" class="btn-confirm dialog-btn">Confirm</button>
+			<button onclick="closeModal('contact-modal')" class="btn-cancel dialog-btn">Cancel</button>
+		</dialog>
+	</div>
+	<footer id="footer" style="display: none">
+		<h1 class="card-container-footer">FOOTER</h1>
+	</footer>
 	<script type="text/javascript" src="intro.js"></script>
 </body>
 </html>

@@ -24,6 +24,9 @@ function initLoad() {
 		document.styleSheets[i].disabled = true;
 	}
 	document.styleSheets[defaultStyle].disabled = false;
+	
+	// placeFooter();
+	// document.getElementById('footer').style.removeProperty('display');
 }
 
 function dispContent(contentClass,navOp) {
@@ -48,6 +51,8 @@ function dispContent(contentClass,navOp) {
 			content[i].style.opacity = 100;
 		}
 	}, 20);
+	// calcFooterPos();
+	adjustFooter();
 }
 
 //Clears content from screen with class name of 'to-remove'
