@@ -20,10 +20,13 @@ function initLoad() {
 	onHomeScreen = true;
 		
 	let i;
-	for(i = 2; i < document.styleSheets.length; i++) {
-		document.styleSheets[i].disabled = true;
-	}
-	document.styleSheets[defaultStyle].disabled = false;
+	//Need to fix this logic if want to implement theme options
+	//Rather than disabling all style sheets, need to disable specifically
+	//the ones the "theme" ones which aren't being used
+	// for(i = 2; i < document.styleSheets.length; i++) {
+		// document.styleSheets[i].disabled = true;
+	// }
+	// document.styleSheets[defaultStyle].disabled = false;
 	
 	// placeFooter();
 	// document.getElementById('footer').style.removeProperty('display');

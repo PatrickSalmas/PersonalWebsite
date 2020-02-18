@@ -228,15 +228,27 @@ footer {
 	/* margin-bottom: -50px; */
 }
 
+#footer i {
+	font-size: 30px;
+	margin-left: 6px;
+	margin-right: 6px;
+	/* height: 65px; */
+	/* width: 65px; */
+}
+
+i {
+	
+}
+
 #linkedin {
-	background-image: url(../media/linkedin-symbol.jpg);
-	background-size: 35px;
-	background-repeat: no-repeat;
+	/* background-image: url(../media/linkedin-symbol.jpg); */
+	/* background-size: 35px; */
+	/* background-repeat: no-repeat; */
 	/* height: 55px; */
 	/* width: 55px; */
-	background-position: center;
+	/* background-position: center; */
 	/* position: absolute; */
-	padding: 35px 35px;
+	/* padding: 35px 35px; */
 	/* display: inline-block; */
 	/* padding: 30px; */
 }
