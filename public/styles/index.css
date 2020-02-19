@@ -48,6 +48,7 @@ header {
 	padding: 30px 10%;
 	background-color: var(--nav-color);
 	border-bottom: var(--nav-border-bottom);
+	height: 140px;
 }
 
 header .logo {
