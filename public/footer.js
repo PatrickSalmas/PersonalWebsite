@@ -30,6 +30,5 @@ function calcFooterPos() {
 	return Math.max(...distanceDown);
 }
 
-// window.onresize = resizeEvent();
 window.addEventListener('resize', adjustFooter);
 
