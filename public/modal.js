@@ -45,11 +45,15 @@ function closeModal(modalId) {
 function disableBackground() {
 	let backgroundItems = document.getElementsByClassName('to-remove');
 	let headerItems = document.getElementsByTagName('header');
+	let footerItems = document.getElementsByTagName('footer');
 	for(let i = 0; i < backgroundItems.length; i++) {
 		backgroundItems[i].classList.add('disabled');
 	}
 	for(let i = 0; i < headerItems.length; i++) {
 		headerItems[i].classList.add('disabled');
+	}
+	for(let i = 0; i < footerItems.length; i++) {
+		footerItems[i].classList.add('disabled');
 	}
 }
 

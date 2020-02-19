@@ -1,5 +1,5 @@
 //Respresented in pixels
-var footerHeight = 65;
+var footerHeight = 50;
 
 
 function placeFooter() {
@@ -10,7 +10,6 @@ function placeFooter() {
 
 function adjustFooter() {
 	if(!onHomeScreen) {
-		console.log("footer adjust");
 		let footer = document.getElementById('footer');
 		let footTop = (calcFooterPos() + footerHeight).toString(10)+"px";
 		footer.style = "top: " + footTop;
@@ -19,6 +18,7 @@ function adjustFooter() {
 
 function calcFooterPos() {
 	let navBarHeight = document.getElementById('header').offsetHeight;
+	// let navBarHeight = document.getElementById('header').getAttribute('height');
 	
 	let onScreenElems = document.getElementsByClassName('to-remove');
 	let distanceDown = [];

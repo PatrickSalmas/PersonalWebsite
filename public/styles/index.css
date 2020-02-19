@@ -200,7 +200,7 @@ footer {
 	/* top: 5000px; */
 	/* margin-top: 90%; */
 	width: 100%;
-	height: 65px;
+	height: 50px;
 	background-color: var(--nav-color);
 	/* text-align: center; */
 	transition: none;
@@ -212,7 +212,7 @@ footer {
 	/* margin-right: 50px; */
 	/* margin-right: 250px; */
 	left: 80vw;
-	line-height: 60px;
+	/* line-height: 60px; */
 	/* margin-bottom: -50px; */
 	display: inline-block;
 	position: absolute;
@@ -232,13 +232,9 @@ footer {
 	font-size: 30px;
 	margin-left: 6px;
 	margin-right: 6px;
-	margin-top: 15px;
+	margin-top: 10px;
 	/* height: 65px; */
 	/* width: 65px; */
-}
-
-i {
-	
 }
 
 #linkedin {
@@ -256,7 +252,7 @@ i {
 
 .foot-name {
 	font-family: var(--font-family);
-	line-height: 60px;
+	line-height: 45px;
 	margin-left: 50px;
 	text-align: left;
 	display: inline-block;
