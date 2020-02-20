@@ -296,7 +296,12 @@ footer {
 	header .mobile {
 		display: inline
 	}
+}
 
+@media screen and (max-width: 850px) {
+	#myName {
+		margin-left: -65px;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -304,5 +309,111 @@ footer {
 		left: 70vw;
 	}
 	
+	.foot-name {
+		margin-left: 45px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#myName {
+		margin-left: -55px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#myName {
+		margin-left: -45px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.foot-links {
+		left: 65vw;
+	}
 	
+	.foot-name {
+		margin-left: 38px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.foot-links {
+		left: 60vw;
+	}
+	
+	.foot-name {
+		margin-left: 32px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#myName {
+		margin-left: -38px;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	.foot-links {
+		left: 55vw;
+	}
+	
+	.foot-name {
+		margin-left: 40px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.foot-links {
+		left: 50vw;
+	}
+	
+	.foot-name {
+		margin-left: 25px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#myName {
+		margin-left: -35px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.foot-links {
+		left: 47vw;
+	}
+	
+	.foot-name {
+		margin-left: 15px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.foot-links {
+		left: 44vw;
+	}
+	
+	.foot-name {
+		margin-left: 8px;
+	}
+}
+
+@media screen and (max-width: 315px) {
+	.foot-links {
+		left: 42vw;
+	}
+	
+	.foot-name {
+		margin-left: 4px;
+	}
+}
+
+@media screen and (max-width: 305px) {
+	.foot-links {
+		left: 40vw;
+	}
+	
+	.foot-name {
+		margin-left: 2px;
+	}
 }
