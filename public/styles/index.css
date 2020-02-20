@@ -10,9 +10,29 @@
 	/* transition: all 0.3s ease 0s; */
 }
 
+html {
+	/* width: 100%; */
+}
+
 body {
 	background-color: var(--bg-color);
 	overflow-x: hidden;
+	width: 100%;
+	position: fixed;
+	
+	/* height: 100%; */
+	/* overflow: hidden; */
+
+	/* position: fixed; */
+}
+
+/* html, body { */
+  /* position:fixed; */
+  /* overflow-x:hidden; */
+/* } */
+
+#body-wrap {
+	overflow: hidden;
 }
 
 h2 {
@@ -276,6 +296,16 @@ footer {
 	opacity: 0.85;
 	filter: alpha(opacity=40); 
 	transition: none;
+}
+
+@media screen and (max-width: 1000px) { 
+	header .desktop {
+		display: none;
+	}
+	
+	header .mobile {
+		display: inline
+	}
 }
 
 @media screen and (max-width: 1000px) { 

@@ -35,6 +35,8 @@ function initLoad() {
 function dispContent(contentClass,navOp,version) {
 	if(onHomeScreen) {
 		document.body.style.removeProperty('overflow');
+		// document.getElementById('html').removeProperty('overflow');
+		// document.getElementById('html').style.remove
 		onHomeScreen = false;
 	}
 	
@@ -83,30 +85,38 @@ function removeElements() {
 	}
 }
 
-// function handleMenu() {
-	// let menuCheck = document.getElementById('menu-checkbox');
-	// if(menuCheck.checked === false) {
-		// console.log("closing")
-		// document.body.style.overflowX = "hidden";
-		// setTimeout(function() {
-			// document.getElementById('menu').style.display = "none";
-			// document.body.style.overflowX = "initial";
-		// }, 500);
-	// }
-	// else if(menuCheck.checked === true) {
-		// console.log("opening");
-		// menuCheck.checked = false;
-		// document.body.style.overflowX = "hidden";
-		// document.getElementById('menu').style.display = "block";
-		// setTimeout(function() {
-			// menuCheck.checked = true;
-		// }, 1);
-		// setTimeout(function() {
-			// menuCheck.checked = true;
-			// document.body.style.overflowX = "initial";
-		// }, 500);
-	// }
-// }
+function handleMenu() {
+	//Consider checking if the browser is safari and only doing this that case
+	let menuCheck = document.getElementById('menu-checkbox');
+	if(menuCheck.checked === false) {
+		console.log("closing")
+		document.body.style.overflowX = "hidden";
+		setTimeout(function() {
+			if(!onHomeScreen) {
+				document.body.style.position = "initial";
+			}
+			document.getElementById('menu').style.display = "none";
+			document.body.style.overflowX = "initial";
+		}, 500);
+	}
+	else if(menuCheck.checked === true) {
+		console.log("opening");
+		menuCheck.checked = false;
+		document.body.style.overflowX = "hidden";
+		document.body.style.position = "fixed"
+		document.getElementById('menu').style.display = "block";
+		setTimeout(function() {
+			menuCheck.checked = true;
+		}, 1);
+		setTimeout(function() {
+			menuCheck.checked = true;
+			document.body.style.overflowX = "initial";
+			if(!onHomeScreen) {
+				document.body.style.position = "initial";
+			}
+		}, 500);
+	}
+}
 
 function changeStyle() {
 	// var stylesheet = document.styleSheets[0];

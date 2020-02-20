@@ -1,4 +1,5 @@
 document.body.style.overflow = "hidden";
+// document.getElementById('html').style.overflowY = "hidden";
 window.onbeforeunload = function(event) {
 	scroll(0,0);
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="html">
 <head>
 	<meta charset="utf-8">
 	<title>Patrick Salmas</title>
@@ -20,6 +20,7 @@
 	<script type="text/javascript" src="modal.js"></script>
 </head>
 <body onload="initLoad()">
+	<!-- <div id="body-wrap"> -->
 	<header id="header">
 		<a class="logo" href="index.html" id="myName">PATRICK SALMAS</a>
 		<!-- <nav style="margin-left: auto; margin-right: auto;"> -->
@@ -33,7 +34,7 @@
 		</nav>
 		<nav class="mobile">
 			<div id="menuToggle">
-				<input id="menu-checkbox" type="checkbox"/>
+				<input id="menu-checkbox" onclick="handleMenu()" type="checkbox"/>
 				
 				<span></span>
 				<span></span>
@@ -53,7 +54,6 @@
 			<!-- <option value="blue">Blue</option> -->
 		<!-- </select> -->
 	</header>
-	
 	<!-- Used for intro -->
 
 	<!-- <div id="introName" class="intro to-remove"> -->
@@ -311,5 +311,6 @@
 		</ul>
 	</footer>
 	<script type="text/javascript" src="intro.js"></script>
+<!-- </div> -->
 </body>
 </html>
