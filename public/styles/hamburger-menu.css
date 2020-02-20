@@ -94,9 +94,11 @@
 #menu
 {
   position: absolute;
-  width: 250px;
+  width: 1000px;
+  /* width: 250px; */
   /* height: 400px; */
-  margin: 51.5px 0 0 -140px;
+  margin: 51.5px 500px 0 -140px;
+  right: -600px;
   padding: 50px;
   padding-top: 125px;
   padding-bottom: 20px;
@@ -109,7 +111,8 @@
   
   transform-origin: 0% 0%;
   transform: translate(100%, 0%);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); 
+  transition: all 0.5s ease 0s;
+  /* transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);  */
 }
 
 #menu li
@@ -126,6 +129,12 @@
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+@media screen and (max-width: 1000px) {
+	#menu {
+		margin-left: -107px;
+	}
 }
 
 @media screen and (max-width: 950px) {
