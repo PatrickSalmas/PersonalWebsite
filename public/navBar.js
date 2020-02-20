@@ -32,10 +32,19 @@ function initLoad() {
 	// document.getElementById('footer').style.removeProperty('display');
 }
 
-function dispContent(contentClass,navOp) {
+function dispContent(contentClass,navOp,version) {
 	if(onHomeScreen) {
 		document.body.style.removeProperty('overflow');
 		onHomeScreen = false;
+	}
+	
+	if(version === "mobile") {
+		document.getElementById('menu-checkbox').click();
+		// document.body.style.overflowX = "hidden";
+		// setTimeout(function() {
+			// document.getElementById('menu').style.display = "none";
+			// document.body.style.overflowX = "initial";
+		// }, 500);
 	}
 	removeElements();
 	let content = document.getElementsByClassName(contentClass);
@@ -73,6 +82,31 @@ function removeElements() {
 		activeNav[0].classList.remove('active-nav');
 	}
 }
+
+// function handleMenu() {
+	// let menuCheck = document.getElementById('menu-checkbox');
+	// if(menuCheck.checked === false) {
+		// console.log("closing")
+		// document.body.style.overflowX = "hidden";
+		// setTimeout(function() {
+			// document.getElementById('menu').style.display = "none";
+			// document.body.style.overflowX = "initial";
+		// }, 500);
+	// }
+	// else if(menuCheck.checked === true) {
+		// console.log("opening");
+		// menuCheck.checked = false;
+		// document.body.style.overflowX = "hidden";
+		// document.getElementById('menu').style.display = "block";
+		// setTimeout(function() {
+			// menuCheck.checked = true;
+		// }, 1);
+		// setTimeout(function() {
+			// menuCheck.checked = true;
+			// document.body.style.overflowX = "initial";
+		// }, 500);
+	// }
+// }
 
 function changeStyle() {
 	// var stylesheet = document.styleSheets[0];

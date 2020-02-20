@@ -170,11 +170,23 @@
 	width: 100px;
 	text-align: center;
 	padding: 0px;
+	font-family: var(--font-family);
+	font-size: 18px;
+	color: var(--nav-font-color);
 }
 
 .btn-confirm {
 	margin-bottom: 0px;
 	margin-left: 70px; 
+	background-color: var(--btn-bg-color);
+	border-color: var(--btn-border-color);
+	border-radius: var(--btn-border-radius);
+	border-width: var(--btn-border-width);
+	cursor: pointer;
+}
+
+.btn-confirm:hover {
+	background-color: var(--btn-hover-color);
 }
 
 .btn-cancel {
@@ -183,6 +195,13 @@
 	margin-right: 0px;
 	margin-left: 5px;
 	background-color: var(--nav-color);
+	border-radius: var(--btn-border-radius);
+	border-width: var(--btn-border-width);
+	cursor: pointer;
+}
+
+.btn-cancel:hover {
+	background-color: darkred;
 }
 
  

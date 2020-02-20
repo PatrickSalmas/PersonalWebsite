@@ -1,5 +1,6 @@
 //Respresented in pixels
 var footerHeight = 50;
+var windowHeight = 0;
 
 function placeFooter() {
 	let footTop = (window.innerHeight-footerHeight).toString(10) + "px";
@@ -11,8 +12,9 @@ function adjustFooter() {
 	if(!onHomeScreen) {
 		let footTop = (calcFooterPos() + footerHeight).toString(10)+"px";
 		footer.style = "top: " + footTop;
-	} else {
+	} else if(window.outerHeight != windowHeight) {
 		placeFooter();
+		windowHeight = window.outerHeight;
 	}
 }
 
