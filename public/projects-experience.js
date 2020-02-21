@@ -28,6 +28,9 @@ function adjustWidth() {
 			leftCol[0].style = "";
 		}
 	}
+	else if(width < setWidth) {
+		leftCol[0].style = "";
+	}
 	
 }
 
