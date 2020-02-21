@@ -252,10 +252,13 @@
 	}
 }
 
-@media screen and (max-width: 830px) {
-	
-	
-	
+@media screen and (max-width: 800px) {
+	.column-left, .column-right {
+		clear: both;
+		float: left;
+		width: 82%;
+		margin-left: 10%;
+	}
 }
 
 
