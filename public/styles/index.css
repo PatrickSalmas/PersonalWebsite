@@ -308,6 +308,10 @@ footer {
 	#myName {
 		margin-left: -80px;
 	}
+	
+	#menu li {
+		margin-left: 8%;
+	}
 }
 
 @media screen and (max-width: 950px) {
@@ -318,11 +322,19 @@ footer {
 	header .mobile {
 		display: inline
 	}
+	
+	#menu li {
+		margin-left: 16%;
+	}
 }
 
 @media screen and (max-width: 850px) {
 	#myName {
 		margin-left: -65px;
+	}
+	
+	#menu li {
+		margin-left: 24%;
 	}
 }
 
@@ -334,17 +346,29 @@ footer {
 	.foot-name {
 		margin-left: 45px;
 	}
+	
+	#menu li {
+		margin-left: 28%;
+	}
 }
 
 @media screen and (max-width: 700px) {
 	#myName {
 		margin-left: -55px;
 	}
+	
+	#menu li {
+		margin-left: 36%;
+	}
 }
 
 @media screen and (max-width: 600px) {
 	#myName {
 		margin-left: -45px;
+	}
+	
+	#menu li {
+		margin-left: 42%;
 	}
 }
 
@@ -372,6 +396,10 @@ footer {
 	#myName {
 		margin-left: -38px;
 	}
+	
+	#menu li {
+		margin-left: 50%;
+	}
 }
 
 @media screen and (max-width: 490px) {
@@ -397,6 +425,10 @@ footer {
 @media screen and (max-width: 400px) {
 	#myName {
 		margin-left: -35px;
+	}
+	
+	#menu li {
+		margin-left: 58%;
 	}
 }
 
@@ -437,5 +469,9 @@ footer {
 	
 	.foot-name {
 		margin-left: 2px;
+	}
+	
+	#menu li {
+		margin-left: 65%;
 	}
 }
