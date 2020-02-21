@@ -42,12 +42,13 @@
 	text-align: center;
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1125px) {
 	.card-img {
 		grid-area: card-img;
 		float: left;
-		margin: 15px;
-		margin-left:5%;
+		/* margin: 15px; */
+		/* margin-left:5%; */
+		margin: 5px 15px 7px 6%
 		
 	}
 	
@@ -130,6 +131,8 @@
 	float: right;
 	width: 48%;
 	margin-top: 25px;
+	/* margin-top: 25px; */
+	/* margin */
 	margin-right: 1%;
 }
 
@@ -203,5 +206,74 @@
 .btn-cancel:hover {
 	background-color: darkred;
 }
+
+@media screen and (min-width: 1155px) {
+	.column-right {
+		margin-left: 52%;
+	}
+	
+	.column-left {
+		margin-left: 2%;
+	}
+}
+
+@media screen and (min-width: 1125px) {
+	.projects-experience {
+		/* position: absolute; */
+		/* display: grid; */
+		/* grid-template-rows: auto auto auto; */
+		/* grid-template-columns: auto 25px auto; */
+		/* grid-template-areas: */
+			/* "cirricular-experience . work-experience" */
+			/* "cirricular-experience . projects" */
+			/* "cirricular-experience . leadership-experience"; */
+	
+	}
+	
+	.column-right {
+		margin-left: 51%;
+	}
+	
+	.column-left {
+		margin-left: 1%;
+	}
+	
+	.work-experience {
+		/* grid-area: work-experience; */
+		position: absolute;
+		/* margin-left: 575px; */
+		/* margin-right: 1%; */
+		width: 545px;
+	}
+	
+	.projects {
+		/* grid-area: projects; */
+		position: absolute;
+		/* margin-left: 575px; */
+		/* margin-right: 1%; */
+		margin-top: 532px;
+		width: 545px;
+	}
+	
+	.leadership-experience {
+		/* grid-area: leadership-experience; */
+		position: absolute;
+		/* margin-left: 575px; */
+		/* margin-right: 1%; */
+		margin-top: 1633px;
+		width: 545px;
+	}
+	
+	.cirricular-experience {
+		/* grid-area: cirricular-experience; */
+		position: absolute;
+		/* margin-left: 16px; */
+		/* margin-left: 1%; */
+		/* margin-top: 23px; */
+		width: 545px;
+	}
+}
+
+
 
  
