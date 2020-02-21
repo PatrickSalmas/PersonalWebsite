@@ -20,16 +20,8 @@ body {
 	width: 100%;
 	position: fixed;
 	
-	/* height: 100%; */
-	/* overflow: hidden; */
-
-	/* position: fixed; */
 }
 
-/* html, body { */
-  /* position:fixed; */
-  /* overflow-x:hidden; */
-/* } */
 
 #body-wrap {
 	overflow: hidden;

@@ -49,6 +49,11 @@ function dispContent(contentClass,navOp,version) {
 			// document.body.style.overflowX = "initial";
 		// }, 500);
 	}
+	
+	if(contentClass === "experience-container") {
+		adjustWidth();
+	}
+	
 	removeElements();
 	let content = document.getElementsByClassName(contentClass);
 	
@@ -87,10 +92,9 @@ function removeElements() {
 }
 
 function handleMenu() {
-	//Consider checking if the browser is safari and only doing this that case
+	//Consider checking if the browser is safari and only doing this in that case
 	let menuCheck = document.getElementById('menu-checkbox');
 	if(menuCheck.checked === false) {
-		console.log("closing")
 		document.body.style.overflowX = "hidden";
 		setTimeout(function() {
 			if(!onHomeScreen) {
@@ -101,7 +105,6 @@ function handleMenu() {
 		}, 500);
 	}
 	else if(menuCheck.checked === true) {
-		console.log("opening");
 		menuCheck.checked = false;
 		document.body.style.overflowX = "hidden";
 		document.body.style.position = "fixed"
