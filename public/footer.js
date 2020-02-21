@@ -28,6 +28,7 @@ function calcFooterPos() {
 	for(let i = 0; i < onScreenElems.length; i++) {
 		distanceDown.push(onScreenElems[i].offsetTop + onScreenElems[i].offsetHeight + navBarHeight);
 	}
+	distanceDown.push(window.outerHeight);
 	
 	return Math.max(...distanceDown);
 }

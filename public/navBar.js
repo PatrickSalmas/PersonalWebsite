@@ -35,6 +35,7 @@ function initLoad() {
 function dispContent(contentClass,navOp,version) {
 	if(onHomeScreen) {
 		document.body.style.removeProperty('overflow');
+		document.body.style.position = "initial"
 		// document.getElementById('html').removeProperty('overflow');
 		// document.getElementById('html').style.remove
 		onHomeScreen = false;
