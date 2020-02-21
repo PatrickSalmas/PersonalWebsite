@@ -271,6 +271,7 @@ footer {
 
 #about-pic {
 	margin-top: 30px;
+	content:url("../media/about-pic384.jpg");
 }
 
 #contact-modal {
@@ -289,6 +290,12 @@ footer {
 	filter: alpha(opacity=40); 
 	transition: none;
 }
+
+/* @media screen and (min-width: 1000px) {  */
+	/* .grid-card-borderless { */
+		/* display: grid; */
+	/* } */
+/* } */
 
 @media screen and (max-width: 1000px) { 
 	header .desktop {
@@ -312,6 +319,15 @@ footer {
 	#menu li {
 		margin-left: 8%;
 	}
+	
+	.grid-card-borderless img {
+		float: left;
+	}
+	
+	#about-pic {
+		content:url("../media/about-pic350.jpg");
+	}
+
 }
 
 @media screen and (max-width: 950px) {
@@ -326,6 +342,17 @@ footer {
 	#menu li {
 		margin-left: 16%;
 	}
+	
+
+	/* #about-pic { */
+		/* content:url("../media/about-pic325.jpg"); */
+	/* }	 */
+}
+
+@media screen and (max-width: 900px) {	
+	/* #about-pic { */
+		/* content:url("../media/about-pic300.jpg"); */
+	/* }	 */
 }
 
 @media screen and (max-width: 850px) {
@@ -336,6 +363,10 @@ footer {
 	#menu li {
 		margin-left: 24%;
 	}
+	
+	/* #about-pic { */
+		/* content:url("../media/about-pic285.jpg"); */
+	/* }	 */
 }
 
 @media screen and (max-width: 800px) {
@@ -352,6 +383,12 @@ footer {
 	}
 }
 
+@media screen and (max-width: 750px) {
+	#about-pic {
+		content:url("../media/about-pic325.jpg");
+	}
+}
+
 @media screen and (max-width: 700px) {
 	#myName {
 		margin-left: -55px;
@@ -360,15 +397,9 @@ footer {
 	#menu li {
 		margin-left: 36%;
 	}
-}
-
-@media screen and (max-width: 600px) {
-	#myName {
-		margin-left: -45px;
-	}
 	
-	#menu li {
-		margin-left: 42%;
+	#about-pic {
+		content:url("../media/about-pic300.jpg");
 	}
 }
 
@@ -382,6 +413,43 @@ footer {
 	}
 }
 
+@media screen and (max-width: 650px) {
+	#about-pic {
+		content:url("../media/about-pic350.jpg");
+		margin-left: 23%;
+	}	
+	
+	.card-title {
+		clear: both;
+	}
+	
+	.card-content p {
+		clear: both;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#myName {
+		margin-left: -45px;
+	}
+	
+	#menu li {
+		margin-left: 42%;
+	}
+	
+	#about-pic {
+		/* content:url("../media/about-pic270.jpg"); */
+		margin-left: 20%;
+	}
+	
+}
+
+@media screen and (max-width: 550px) {
+	/* #about-pic { */
+		/* content:url("../media/about-pic255.jpg"); */
+	/* }	 */
+}
+
 @media screen and (max-width: 540px) {
 	.foot-links {
 		left: 60vw;
@@ -390,6 +458,10 @@ footer {
 	.foot-name {
 		margin-left: 32px;
 	}
+	
+	#about-pic {
+		margin-left: 16%;
+	}	
 }
 
 @media screen and (max-width: 500px) {
@@ -400,6 +472,10 @@ footer {
 	#menu li {
 		margin-left: 50%;
 	}
+	
+	#about-pic {
+		margin-left: 14%;
+	}	
 }
 
 @media screen and (max-width: 490px) {
