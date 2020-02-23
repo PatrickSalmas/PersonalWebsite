@@ -4,7 +4,7 @@ function checkMobile() {
   return check;
 };
 
-if(checkMobile()) {
+if(checkMobile()) {	
 	//Adjust projects & experience
 	let columns = document.querySelectorAll('div.column-left, div.column-right');
 	

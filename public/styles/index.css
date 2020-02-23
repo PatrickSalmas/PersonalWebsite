@@ -291,6 +291,62 @@ footer {
 	transition: none;
 }
 
+#crud-image {
+	width: 300px;
+	height: 158.75px;
+}
+
+#web-component-image {
+	width: 300px;
+	height: 226.28px;
+}
+
+#rest-image {
+	width: 300px;
+	height: 184.50px;
+}
+
+#recommender-systems-image {
+	width: 300px;
+	height: 115.52px;
+}
+
+#spam-image {
+	width: 300px;
+	height: 131.67px;
+}
+
+#headphones-image {
+	width: 250px;
+	height: 250px;
+}
+
+#three-wire-image {
+	width: 250px;
+	height: 250px;
+}
+
+#web-development-image {
+	width: 300px;
+	height: 206.9px;
+}
+
+#stock-trade-image {
+	width: 300px;
+	height: 225px;
+}
+
+#montage-image {
+	width: 300px;
+	height: 168.92px;
+}
+
+#patrick-salmas-hockey-image {
+	width: 300px;
+	height: 200px;
+}
+
+
 /* @media screen and (min-width: 1000px) {  */
 	/* .grid-card-borderless { */
 		/* display: grid; */

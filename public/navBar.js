@@ -81,6 +81,7 @@ function dispContent(contentClass,navOp,version) {
 		}
 	}, 20);
 	// calcFooterPos();
+	adjustImages();
 	adjustFooter();
 }
 
