@@ -389,6 +389,7 @@ footer {
 
 }
 
+
 @media screen and (max-width: 950px) {
 	header .desktop {
 		display: none;
@@ -488,9 +489,9 @@ footer {
 	}
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 665px) {
 	#about-pic {
-		content:url("../media/about-pic350.jpg");
+		/* content:url("../media/about-pic350.jpg"); */
 		margin-left: 23%;
 	}	
 	
@@ -598,6 +599,12 @@ footer {
 	}
 }
 
+@media screen and (max-width: 415px) {
+	#about-pic {
+		margin-left: 13%;
+	}
+}
+
 @media screen and (max-width: 400px) {
 	#myName {
 		margin-left: -35px;
@@ -609,6 +616,10 @@ footer {
 	
 	#contact-modal {
 		left: 9vw;
+	}
+	
+	#about-pic {
+		margin-left: 12%;
 	}
 }
 
@@ -624,11 +635,19 @@ footer {
 	#contact-modal {
 		left: 7vw;
 	}
+	
+	#about-pic {
+		margin-left: 9%;
+	}
 }
 
 @media screen and (max-width: 365px) {
 	#contact-modal {
 		left: 5vw;
+	}
+	
+	#about-pic {
+		margin-left: 7%;
 	}
 }
 
@@ -642,6 +661,10 @@ footer {
 	#contact-modal {
 		left: 3vw;
 	}
+	
+	#about-pic {
+		margin-left: 5%;
+	}
 }
 
 @media screen and (max-width: 345px) {
@@ -654,11 +677,19 @@ footer {
 	#contact-modal {
 		left: 1.5vw;
 	}
+
+	#about-pic {
+		margin-left: 4%;
+	}
 }
 
 @media screen and (max-width: 335px) {
 	#contact-modal {
 		left: 1vw;
+	}
+	
+	#about-pic {
+		margin-left: 2%;
 	}
 }
 

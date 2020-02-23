@@ -30,6 +30,7 @@
 	}
 }
 
+
 .card-borderless {
  	margin-top: 4%;
 	margin-bottom: 4%;
@@ -254,6 +255,15 @@
 	}
 }
 
+@media screen and (max-width: 999px) { 
+	.card-title {
+		margin-top: 25px;
+		margin-bottom: 0px;
+		margin-left: 0%;
+		display: inline-block;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.column-left, .column-right {
 		clear: both;
@@ -262,6 +272,16 @@
 		margin-left: 10%;
 	}
 }
+
+@media screen and (max-width: 665px) { 
+	.card-title {
+		margin-left: 6%;
+		display: block
+	}	
+	
+	
+}
+
 
 
 
