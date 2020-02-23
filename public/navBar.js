@@ -39,6 +39,15 @@ function dispContent(contentClass,navOp,version) {
 		// document.getElementById('html').removeProperty('overflow');
 		// document.getElementById('html').style.remove
 		onHomeScreen = false;
+	} 
+	
+	if(contentClass === "experience-container") {
+		window.addEventListener('resize', adjustWidth);
+		window.addEventListener('resize', adjustImages);
+	} else {
+		window.removeEventListener('resize', adjustWidth);
+		window.removeEventListener('resize', adjustImages);
+		// console.log(
 	}
 	
 	if(version === "mobile") {
