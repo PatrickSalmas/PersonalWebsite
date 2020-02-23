@@ -409,6 +409,10 @@ footer {
 }
 
 @media screen and (max-width: 900px) {	
+	#contact-modal {
+		left: 34vw;
+	}
+
 	/* #about-pic { */
 		/* content:url("../media/about-pic300.jpg"); */
 	/* }	 */
@@ -421,6 +425,10 @@ footer {
 	
 	#menu li {
 		margin-left: 24%;
+	}
+	
+	#contact-modal {
+		left: 32vw;
 	}
 	
 	/* #about-pic { */
@@ -439,6 +447,10 @@ footer {
 	
 	#menu li {
 		margin-left: 28%;
+	}
+	
+	#contact-modal {
+		left: 30vw;
 	}
 }
 
@@ -459,6 +471,10 @@ footer {
 	
 	#about-pic {
 		content:url("../media/about-pic300.jpg");
+	}
+	
+	#contact-modal {
+		left: 28vw;
 	}
 }
 
@@ -485,6 +501,10 @@ footer {
 	.card-content p {
 		clear: both;
 	}
+	
+	#contact-modal {
+		left: 26vw;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -501,12 +521,19 @@ footer {
 		margin-left: 20%;
 	}
 	
+	#contact-modal {
+		left: 23vw;
+	}
+	
 }
 
 @media screen and (max-width: 550px) {
 	/* #about-pic { */
 		/* content:url("../media/about-pic255.jpg"); */
 	/* }	 */
+	#contact-modal {
+		left: 21vw;
+	}
 }
 
 @media screen and (max-width: 540px) {
@@ -535,6 +562,10 @@ footer {
 	#about-pic {
 		margin-left: 14%;
 	}	
+	
+	#contact-modal {
+		left: 17vw;
+	}
 }
 
 @media screen and (max-width: 490px) {
@@ -547,6 +578,12 @@ footer {
 	}
 }
 
+@media screen and (max-width: 450px) {
+	#contact-modal {
+		left: 13vw;
+	}
+}
+
 @media screen and (max-width: 425px) {
 	.foot-links {
 		left: 50vw;
@@ -554,6 +591,10 @@ footer {
 	
 	.foot-name {
 		margin-left: 25px;
+	}
+	
+	#contact-modal {
+		left: 11vw;
 	}
 }
 
@@ -565,6 +606,10 @@ footer {
 	#menu li {
 		margin-left: 58%;
 	}
+	
+	#contact-modal {
+		left: 9vw;
+	}
 }
 
 @media screen and (max-width: 380px) {
@@ -575,15 +620,57 @@ footer {
 	.foot-name {
 		margin-left: 15px;
 	}
+	
+	#contact-modal {
+		left: 7vw;
+	}
 }
 
-@media screen and (max-width: 380px) {
-	.foot-links {
-		left: 44vw;
+@media screen and (max-width: 365px) {
+	#contact-modal {
+		left: 5vw;
 	}
-	
-	.foot-name {
-		margin-left: 8px;
+}
+
+@media screen and (max-width: 355px) {
+	#contact-modal {
+		left: 4vw;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	#contact-modal {
+		left: 3vw;
+	}
+}
+
+@media screen and (max-width: 345px) {
+	#contact-modal {
+		left: 2vw;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	#contact-modal {
+		left: 1.5vw;
+	}
+}
+
+@media screen and (max-width: 335px) {
+	#contact-modal {
+		left: 1vw;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	#contact-modal {
+		left: 0.5vw;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	#contact-modal {
+		left: 0vw;
 	}
 }
 
