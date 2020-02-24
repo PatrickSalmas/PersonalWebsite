@@ -12,9 +12,8 @@ function adjustFooter() {
 	if(!onHomeScreen) {
 		let footTop = (calcFooterPos() + footerHeight).toString(10)+"px";
 		footer.style = "top: " + footTop;
-	} else if(window.outerHeight != windowHeight) {
+	} else {
 		placeFooter();
-		windowHeight = window.outerHeight;
 	}
 }
 
