@@ -78,7 +78,7 @@
 				</div>
 			</div>
 			
-			<div class="projects-experience">
+			<div class="projects-experience experience-container" style="display:none">
 			<div class="column-left cirricular-experience">
 				<h1 class="column-title experience-container" style="display: none;">Curricular Experience</h1>
 				<div class="experience-container" style="display: none;">
@@ -260,15 +260,7 @@
 			</div>
 			</div>
 	</div>
-	
-	<div id="contact-modal-div" style="display: none">
-		<dialog id="contact-modal" class="modal">
-			<p class="modal-prompt">Would you like to send Patrick an email?</p>
-			<button onclick="sendEmail()" class="btn-confirm dialog-btn">Confirm</button>
-			<button onclick="closeModal('contact-modal')" class="btn-cancel dialog-btn">Cancel</button>
-		</dialog>
-	</div>
-	<footer id="footer" style="display: none">
+	<div id="footer">
 		<p class="foot-name">© Patrick Salmas</p>
 		<ul class="foot-links">
 			<li>
@@ -293,7 +285,14 @@
 				</a>
 			</li>
 		</ul>
-	</footer>
+	</div>	
+	<div id="contact-modal-div" style="display: none">
+		<dialog id="contact-modal" class="modal">
+			<p class="modal-prompt">Would you like to send Patrick an email?</p>
+			<button onclick="sendEmail()" class="btn-confirm dialog-btn">Confirm</button>
+			<button onclick="closeModal('contact-modal')" class="btn-cancel dialog-btn">Cancel</button>
+		</dialog>
+	</div>
 	<script type="text/javascript" src="intro.js"></script>
 	<script type="text/javascript" src="mobile.js"></script>
 </div>

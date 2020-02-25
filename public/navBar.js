@@ -44,9 +44,13 @@ function dispContent(contentClass,navOp,version) {
 	if(contentClass === "experience-container") {
 		window.addEventListener('resize', adjustWidth);
 		window.addEventListener('resize', adjustImages);
+		window.addEventListener('resize',adjustFooter);
+		// adjustFooter();
 	} else {
 		window.removeEventListener('resize', adjustWidth);
 		window.removeEventListener('resize', adjustImages);
+		window.removeEventListener('resize', adjustFooter);
+		document.getElementById('footer').style = "";
 		// console.log(
 	}
 	
@@ -75,14 +79,16 @@ function dispContent(contentClass,navOp,version) {
 		content[i].style.removeProperty('display');
 	}
 	
+	if(contentClass === "experience-container") {
+		adjustFooter();
+		adjustImages();
+	}
+	
 	setTimeout(function() {
 		for(i = 0; i < content.length; i++) {
 			content[i].style.opacity = 100;
 		}
 	}, 20);
-	// calcFooterPos();
-	adjustImages();
-	adjustFooter();
 }
 
 //Clears content from screen with class name of 'to-remove'
