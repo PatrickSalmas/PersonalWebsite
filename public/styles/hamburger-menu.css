@@ -119,7 +119,12 @@
 {
   padding: 10px 0;
   font-size: 22px;
+  width: 1000px;
   font-family: var(--font-family);
+}
+
+#menu li:hover {
+	background-color: rgb(211,211,211,0.3);	
 }
 
 #firstLink { 
