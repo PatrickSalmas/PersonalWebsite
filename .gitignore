@@ -1,4 +1,7 @@
 practice/
+*.mp4
+public/notes.txt
+public/styles/all.css
 
 # Logs
 logs
