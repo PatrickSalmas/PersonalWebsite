@@ -19,7 +19,6 @@ function adjustFooter() {
 
 function calcFooterPos() {
 	let navBarHeight = document.getElementById('header').offsetHeight;
-	// let navBarHeight = document.getElementById('header').getAttribute('height');
 	
 	let onScreenElems = document.getElementsByClassName('to-remove');
 	let distanceDown = [];

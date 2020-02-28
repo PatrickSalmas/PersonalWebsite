@@ -12,32 +12,14 @@ var textHoverColor = "#0088a9";
 
 var allTransition = "all 0.85s ease 0s";
 
-var onHomeScreen;
+var onHomeScreen = true;
 
 var defaultStyle = 3;  //The index of the default style sheet in document.styleSheets
-
-function initLoad() {
-	onHomeScreen = true;
-		
-	let i;
-	//Need to fix this logic if want to implement theme options
-	//Rather than disabling all style sheets, need to disable specifically
-	//the ones the "theme" ones which aren't being used
-	// for(i = 2; i < document.styleSheets.length; i++) {
-		// document.styleSheets[i].disabled = true;
-	// }
-	// document.styleSheets[defaultStyle].disabled = false;
-	
-	// placeFooter();
-	// document.getElementById('footer').style.removeProperty('display');
-}
 
 function dispContent(contentClass,navOp,version) {
 	if(onHomeScreen) {
 		document.body.style.removeProperty('overflow');
 		document.body.style.position = "initial"
-		// document.getElementById('html').removeProperty('overflow');
-		// document.getElementById('html').style.remove
 		onHomeScreen = false;
 	} 
 	
@@ -45,22 +27,15 @@ function dispContent(contentClass,navOp,version) {
 		window.addEventListener('resize', adjustWidth);
 		window.addEventListener('resize', adjustImages);
 		window.addEventListener('resize',adjustFooter);
-		// adjustFooter();
 	} else {
 		window.removeEventListener('resize', adjustWidth);
 		window.removeEventListener('resize', adjustImages);
 		window.removeEventListener('resize', adjustFooter);
 		document.getElementById('footer').style = "";
-		// console.log(
 	}
 	
 	if(version === "mobile") {
 		document.getElementById('menu-checkbox').click();
-		// document.body.style.overflowX = "hidden";
-		// setTimeout(function() {
-			// document.getElementById('menu').style.display = "none";
-			// document.body.style.overflowX = "initial";
-		// }, 500);
 	}
 	
 	if(contentClass === "experience-container") {
@@ -141,8 +116,6 @@ function handleMenu() {
 }
 
 function changeStyle() {
-	// var stylesheet = document.styleSheets[0];
-	// stylesheet.disabled = true;
 	let scheme = document.getElementById('scheme-select').value;
 	let stylesheet;
 	let i;

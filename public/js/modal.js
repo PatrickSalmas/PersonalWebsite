@@ -1,7 +1,7 @@
 function loadModal(modalId) {
 	
 	//Temporary solution for dialog bug that is occuring in Firefox
-	//To remove
+	//TO REMOVE
 	if(navigator.userAgent.includes("Firefox")) {
 		sendEmail();
 		return;

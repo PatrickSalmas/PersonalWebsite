@@ -61,8 +61,6 @@ function adjustImages() {
 		
 		
 		for(let i = 0; i < imgs.length; i++) {
-			// let imgWidth = imgs[i].style.width;
-			// console.log(imgWidth);
 			let style = window.getComputedStyle(imgs[i]);
 			let imgWidth = style.getPropertyValue('width').substring(0,style.getPropertyValue('width').length-2);
 			let imgHeight = style.getPropertyValue('height').substring(0,style.getPropertyValue('height').length-2);			
@@ -73,7 +71,6 @@ function adjustImages() {
 			
 			let aspectRatio = imgWidth/imgHeight;
 			
-			// let newWidth = 250;
 			let newHeight = newWidth / aspectRatio;
 			
 			imgs[i].style.width = newWidth.toString(10) + "px";
