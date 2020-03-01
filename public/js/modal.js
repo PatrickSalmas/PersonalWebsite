@@ -12,6 +12,11 @@ function loadModal(modalId) {
 	disableBackground();
 	disableBtnsLinks();
 	
+	let menuCheckbox = document.getElementById('menu-checkbox');
+	if(menuCheckbox.checked) {
+		menuCheckbox.checked = false;
+	}
+	
 	let content = document.getElementById('content');
 	let header = document.getElementById('header');
 
